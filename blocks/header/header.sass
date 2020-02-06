@@ -1,0 +1,192 @@
+.header
+  position: relative
+  height: 98px
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    height: 60px
+  @media #{$_xs}
+  .container
+    height: 100%
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+  &__wrap
+    z-index: 100
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+      // justify-content: flex-end
+  &__phone
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+      display: none
+    &-link
+      font-family: HelveticaNeueCyr
+      font-size: 12px
+      font-weight: 900
+      font-style: normal
+      font-stretch: normal
+      line-height: 2.5
+      letter-spacing: normal
+      text-align: left
+      color: #000000
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+  &__logo
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+      position: static
+      transform: none
+    &-link
+      font-family: AbhayaLibre
+      font-size: 27px
+      font-weight: 800
+      font-style: normal
+      font-stretch: normal
+      line-height: 0.94
+      letter-spacing: normal
+      text-align: center
+      text-transform: uppercase
+      color: #000000
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+        font-size: 23px
+  &__btn-menu
+    display: flex
+    width: 78px
+    margin-top: 10px
+    padding: 0
+    @media #{$_lg}
+    @media #{$_md}
+      margin-top: 0
+    @media #{$_sm}
+    @media #{$_xs}
+    &-text
+      margin-right: 16px
+      font-family: HelveticaNeueCyr
+      font-size: 12px
+      font-weight: 900
+    &-hamb
+      position: relative
+      height: 10px
+      width: 26px
+      margin-top: 1px
+      &-line
+        position: absolute
+        display: block
+        width: 26px
+        height: 1px
+        background-color: #000000
+        transition: all .4s
+      &-line
+        &.top-line
+          top: 0
+        &.bottom-line
+          bottom: 0
+    &.open
+      .top-line
+        top: 4px
+        transform: rotate(45deg)
+      .bottom-line
+        bottom: 5px
+        transform: rotate(-45deg)
+  &__menu-body
+    position: absolute
+    top: 0
+    display: none
+    justify-content: center
+    z-index: 80
+    width: 100%
+    height: 100vh
+    padding-bottom: 50px
+    padding-top: 130px
+    background: url(../img/menu_bg.jpg)
+    opacity: 0
+    transition: opacity .5s
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      // height: calc(100vh - 60px)
+      padding-top: 150px
+      padding-bottom: 150px
+    @media #{$_xs}
+      padding-bottom: 88px
+    &.open
+      opacity: 1
+      display: flex
+  &__menu-menu
+    display: flex
+    width: 100%
+    height: 100%
+    margin-left: -30px
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    flex-wrap: wrap
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      margin-left: 0
+    @media #{$_xs}
+      flex-wrap: nowrap
+      padding-left: 50px
+  &__menu-item
+    display: flex
+    // justify-content: center
+    align-items: center
+    padding-left: 30px
+    height: calc(25% - 30px)
+    max-height: 150px
+    width: 39%
+    margin: 15px 0
+    background: transparent
+    transition: all .3s
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      width: 50%
+    @media #{$_ms}
+    @media #{$_xs}
+      height: auto
+      width: 100%
+      margin: 10px 0
+      padding: 0
+    &-link
+      font-family: PlayfairDisplayDS
+      font-size: 80px
+      color: rgba(0,0,0,.8)
+      transition: all .2s
+      @media #{$_lg}
+        font-size: 60px
+      @media #{$_md}
+        font-size: 50px
+      @media #{$_sm}
+        font-size: 40px
+      @media #{$_xs}
+        font-size: 30px
+    &:hover
+      background: #CC8E1F
+    &:hover &-link
+      color: white
+
+.fixed .header
+  background: url(../img/menu_bg.jpg)

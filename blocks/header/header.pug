@@ -1,0 +1,24 @@
+mixin header()
+  +b.HEADER.header(id="header")
+    .container
+      +e.logo
+        +e.A.logo-link
+          +e.IMG(src="img/logo.png").logo-img
+      +e.NAV.menu
+        +e.UL.menu-list
+          +e.LI.current
+            +e.A Цены и услуги
+          +e.LI
+            +e.A Результат
+          +e.LI
+            +e.A приемущества
+          +e.LI
+            +e.A Процесс
+          +e.LI
+            +e.A Вопросы
+          +e.LI
+            +e.A Отзывы
+      +e.laungu
+      +e.A.phone
+        +e.phone-icon
+        +e.phone-text +38 (093) 350 30 30
