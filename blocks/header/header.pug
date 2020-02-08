@@ -1,24 +1,21 @@
 mixin header()
   +b.HEADER.header(id="header")
     .container
-      +e.logo
-        +e.A.logo-link
-          +e.IMG(src="img/logo.png").logo-img
-      +e.NAV.menu
-        +e.UL.menu-list
-          +e.LI.current
-            +e.A Цены и услуги
-          +e.LI
-            +e.A Результат
-          +e.LI
-            +e.A приемущества
-          +e.LI
-            +e.A Процесс
-          +e.LI
-            +e.A Вопросы
-          +e.LI
-            +e.A Отзывы
-      +e.laungu
-      +e.A.phone
-        +e.phone-icon
-        +e.phone-text +38 (093) 350 30 30
+      +e.wrapper
+        +e.A.logo
+          +e.IMG(src='images/logo.jpg').logo-img
+        +e.NAV#headerMenu.menu
+          +e.UL.menu-list
+            +e.LI.menu-item
+              +e.A(href="#").menu-link Головна
+            +e.LI.menu-item
+              +e.A(href="#").menu-link Блог
+            +e.LI.menu-item
+              +e.A(href="#").menu-link Дизайн-проекти
+            +e.LI.menu-item
+              +e.A(href="#").menu-link Контакти
+          +e.BUTTON.get-call Замовити дзвінок
+          +e.A.phone +38 (098) 936 55 91
+          +e.langswitch
+
+  
