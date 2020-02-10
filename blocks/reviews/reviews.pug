@@ -1,3 +1,23 @@
 mixin reviews()
   +b.SECTION.reviews
-    .container
+    +e.wrap
+      +e.slider
+        +e.slider-nav
+          +e.BUTTON.slider-prev.slider-nav
+          +e.BUTTON.slider-next.slider-nav
+        +e.slider-wrap
+          +e.item
+            +e.H5 Тамара Киринаева
+            +e.P Заказывали ремонт 2-х комнат и кухни. Очень ответственные и профессиональные сотрудники. Спальня, зал, кабинет – все стильно и доведено до блеска по качеству! Мы очень довольны.
+            +e.item-img
+              +e.item-img-wrap
+                +e.IMG(src="images/rewiews.jpg").item-img-img
+            +e.BUTTON.item-btn Відео відгук
+            +e.sv-block
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+              

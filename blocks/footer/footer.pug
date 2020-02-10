@@ -1,35 +1,14 @@
 mixin footer()
   +b.FOOTER.footer
-    .container
-      +e.wrap
-        +e.logo
-          +e.A.logo-link Tim Corp
-        +e.form
-          +e.FORM
-            +e.LABEL.label Subscribe to our newsletter
-            +e.INPUT(placeholder="Name").input
-            +e.BUTTON.btn-submit Send
-        +e.nav
-          +e.UL.menu
-            +e.LI.menu-item
-              +e.A(href="#") Home
-            +e.LI.menu-item
-              +e.A(href="#") Watches
-            +e.LI.menu-item
-              +e.A(href="#") Eyewear
-            +e.LI.menu-item
-              +e.A(href="#") Jewelry
-            +e.LI.menu-item
-              +e.A(href="#") Handbags
-            +e.LI.menu-item
-              +e.A(href="#") About Us
-        +e.contact
-          +e.H4.contact-title Contact Us
-          +e.P Tel: 
-            +e.A(href='tel:8569882671') (856) 988-2671
-          +e.P Email: 
-            +e.A(href='email:info@timcorpofnj.com') info@timcorpofnj.com
-          +e.P Instagram: 
-            +e.A(href="") Timcorp
-      +e.copyright-line
-        +e.copyright © 2018 TIM Corp of NJ. All rights reserved.
+    +e.wrap
+      +e.NAV.nav
+        +e.UL
+          +e.LI
+            +e.A(href="") Головна
+          +e.LI
+            +e.A(href="") Блог
+          +e.LI
+            +e.A(href="") Дизайн-проекти
+          +e.LI
+            +e.A(href="") Контакти
+      +e.policy Политика конфиденфиальности

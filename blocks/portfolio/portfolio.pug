@@ -1,3 +1,14 @@
 mixin portfolio()
   +b.SECTION.portfolio
-    .container
+    +e.H2.title Наші ремонтні роботи
+    +e.slider
+      +e.slider-wrap
+        +e.slider-show
+        +e.slider-info
+          +e.slider-text
+            +e.h5 м. Житомир, вул. Велика Бердичівська, 48
+            +e.p Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+          +e.BUTTON.slider-btn Хочу такий ремонт
+      +e.slider-nav
+        +e.BUTTON.slider-prev.slider-nav
+        +e.BUTTON.slider-next.slider-nav

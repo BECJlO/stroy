@@ -1,1 +1,68 @@
 .broadcast
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
+  &__title
+    font-size: 48px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 0.75
+    letter-spacing: 0.96px
+    text-align: center
+    color: #000000
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+  &__subtitle
+    font-size: 18px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    // line-height: 3.56
+    letter-spacing: 0.36px
+    text-align: left
+    color: #0e0e0e
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+  &__video
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+    &-img
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+    &-btn
+      position: absolute
+      width: 70px
+      height: 70px
+      box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
+      border: solid 3px #ffffff
+      border-radius: 35px
+      background-color: #00fce2
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+      &:after
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-5px, -50%)
+        display: block
+        content: ''
+        border: 14px solid transparent
+        border-top: 8px solid transparent
+        border-bottom: 8px solid transparent
+        border-left-color: black

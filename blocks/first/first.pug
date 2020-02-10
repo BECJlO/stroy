@@ -1,4 +1,39 @@
 mixin first()
   +b.SECTION.first
+    .dec-slider
+      IMG(src='images/back_slide.jpg').dec-slider-img
     .container
-      
+      +e.head
+        +e.dots
+          +e.dots-line
+            SPAN
+            SPAN.yellow
+            SPAN
+            SPAN
+          +e.dots-line
+            SPAN
+            SPAN
+            SPAN
+            SPAN
+          +e.dots-line
+            SPAN
+            SPAN
+            SPAN
+            SPAN.green
+        +e.H1.title
+          +e.SPAN.title-fw Ремонт 
+          br
+          |в Житомирі та області з гарантією 
+          +e.SPAN.title-num 3 
+          |роки
+        +e.H4.subtitle
+          |Виключно в строк від провідних спеціалістів по фіксованим цінам
+      +e.slider
+        +e.slider-wrap
+          +e.slider-item
+            +e.IMG(src="images/slide1.jpg").slider-img
+        +e.slider-nav
+          +e.BUTTON.slider-prev.slider-nav
+          +e.BUTTON.slider-next.slider-nav
+    +broadcast()
+    +calc()

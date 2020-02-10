@@ -1,3 +1,22 @@
 mixin calc()
   +b.SECTION.calc
-    .container
+    +e.wrap
+      +e.FORM.form
+        +e.title Розрахуйте точну вартість вашого ремонту
+        +e.input-block
+          +e.LABEL.input-label Який ремонт?
+          +e.INPUT.input-input
+        +e.input-block
+          +e.LABEL.input-label Житловий фонд
+          +e.INPUT.input-input
+        +e.input-block
+          +e.LABEL.input-label Загальна площа
+          +e.INPUT.input-input
+          +e.SPAN.input-farea 114 кв. м
+        +e.input-block
+          +e.LABEL.input-label Кількість кімнат, що потребує ремонту
+          +e.INPUT.input-input
+        +e.BUTTON.bnt Отримати розрахунок
+
+
+

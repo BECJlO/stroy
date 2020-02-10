@@ -12,7 +12,7 @@ include discount/discount
 include portfolio/portfolio
 include contacts/contacts
 include reviews/reviews
-//- include map/map
+include map/map
 
 include footer/footer
 
@@ -34,9 +34,37 @@ html(lang="ru")
 				+header()
 
 			block content
-				
-			block footer
-				+footer()
+
+			block first
+				+first()
+
+					
+			.second--block
+
+				block servise
+					+servise()
+
+				block discount
+					+discount()
+			
+			.third--block
+
+				block portfolio
+					+portfolio()
+
+				block contacts
+					+contacts()
+
+				block reviews
+					+reviews()
+
+			.fourth--block
+
+				block map
+					+map()
+					
+				block footer
+					+footer()
 
 			block vendors
 				// build:js js/vendor.js
