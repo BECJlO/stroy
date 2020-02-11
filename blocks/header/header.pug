@@ -1,21 +1,20 @@
 mixin header()
   +b.HEADER.header(id="header")
-    +e.container
-      +e.wrap
-        +e.A.logo
-          +e.IMG(src='images/logo.jpg').logo-img
-        +e.NAV#headerMenu.menu
-          +e.UL.menu-list
-            +e.LI.menu-item
-              +e.A(href="#").menu-link Головна
-            +e.LI.menu-item
-              +e.A(href="#").menu-link Блог
-            +e.LI.menu-item
-              +e.A(href="#").menu-link Дизайн-проекти
-            +e.LI.menu-item
-              +e.A(href="#").menu-link Контакти
-          +e.BUTTON.get-call Замовити дзвінок
-          +e.A.phone +38 (098) 936 55 91
-          +e.langswitch
+    +e.wrap
+      +e.A.logo
+        +e.IMG(src='images/logo.jpg').logo-img
+      +e.NAV#headerMenu.menu
+        +e.UL.menu-list
+          +e.LI.menu-item.active
+            +e.A(href="#").menu-link Головна
+          +e.LI.menu-item
+            +e.A(href="#").menu-link Блог
+          +e.LI.menu-item
+            +e.A(href="#").menu-link Дизайн-проекти
+          +e.LI.menu-item
+            +e.A(href="#").menu-link Контакти
+        +e.BUTTON.get-call Замовити дзвінок
+        +e.A.phone +38 (098) 936 55 91
+        +e.langswitch
 
 

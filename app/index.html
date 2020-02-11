@@ -25,25 +25,23 @@
   </head>
   <body class="page">
     <header class="header" id="header">
-      <div class="header__container">
-        <div class="header__wrap"><a class="header__logo"><img class="header__logo-img" src="images/logo.jpg" alt="" role="presentation"/></a>
-          <nav class="header__menu" id="headerMenu">
-            <ul class="header__menu-list">
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Головна</a>
-              </li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Блог</a>
-              </li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Дизайн-проекти</a>
-              </li>
-              <li class="header__menu-item"><a class="header__menu-link" href="#">Контакти</a>
-              </li>
-            </ul>
-            <button class="header__get-call">Замовити дзвінок
-            </button><a class="header__phone">+38 (098) 936 55 91</a>
-            <div class="header__langswitch">
-            </div>
-          </nav>
-        </div>
+      <div class="header__wrap"><a class="header__logo"><img class="header__logo-img" src="images/logo.jpg" alt="" role="presentation"/></a>
+        <nav class="header__menu" id="headerMenu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item active"><a class="header__menu-link" href="#">Головна</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Блог</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Дизайн-проекти</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <button class="header__get-call">Замовити дзвінок
+          </button><a class="header__phone">+38 (098) 936 55 91</a>
+          <div class="header__langswitch">
+          </div>
+        </nav>
       </div>
     </header>
     <section class="first">
@@ -72,11 +70,15 @@
               <SPAN class="green"></SPAN>
             </div>
           </div>
-          <h1 class="first__title"><span class="first__title-fw">Ремонт </span><br/>в Житомирі та області з гарантією <span class="first__title-num">3 </span>роки
-          </h1>
-          <h4 class="first__subtitle">Виключно в строк від провідних спеціалістів по фіксованим цінам
-          </h4>
+          <div class="first__head-text">
+            <h1 class="first__title"><span class="first__title-fw">Ремонт </span><br/>в Житомирі та області<br> з гарантією <span class="first__title-num">3 </span>роки
+            </h1>
+            <h4 class="first__subtitle">Виключно в строк від провідних спеціалістів по фіксованим цінам
+            </h4>
+          </div>
         </div>
+      </div>
+      <div class="first__wrapper">
         <div class="first__slider">
           <div class="first__slider-wrap">
             <div class="first__slider-item"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
@@ -89,43 +91,43 @@
             </button>
           </div>
         </div>
-      </div>
-      <section class="broadcast">
-        <h2 class="broadcast__title">Як ми працюємо online?
-        </h2>
-        <h4 class="broadcast__subtitle">Пряма трансляція з об'єкту
-        </h4>
-        <div class="broadcast__video"><img class="broadcast__video-img" src="images/bg__broadcast.jpg" alt="" role="presentation"/>
-          <button class="broadcast__video-btn">
-          </button>
-        </div>
-      </section>
-      <section class="calc">
-        <div class="calc__wrap">
-          <form class="calc__form">
-            <div class="calc__title">Розрахуйте точну вартість вашого ремонту
-            </div>
-            <div class="calc__input-block">
-              <label class="calc__input-label">Який ремонт?
-              </label><input class="calc__input-input" type="text"/>
-            </div>
-            <div class="calc__input-block">
-              <label class="calc__input-label">Житловий фонд
-              </label><input class="calc__input-input" type="text"/>
-            </div>
-            <div class="calc__input-block">
-              <label class="calc__input-label">Загальна площа
-              </label><input class="calc__input-input" type="text"/><span class="calc__input-farea">114 кв. м</span>
-            </div>
-            <div class="calc__input-block">
-              <label class="calc__input-label">Кількість кімнат, що потребує ремонту
-              </label><input class="calc__input-input" type="text"/>
-            </div>
-            <button class="calc__bnt">Отримати розрахунок
+        <section class="broadcast">
+          <h2 class="broadcast__title">Як ми працюємо online?
+          </h2>
+          <h4 class="broadcast__subtitle">Пряма трансляція з об'єкту
+          </h4>
+          <div class="broadcast__video"><img class="broadcast__video-img" src="images/bg__broadcast.jpg" alt="" role="presentation"/>
+            <button class="broadcast__video-btn">
             </button>
-          </form>
-        </div>
-      </section>
+          </div>
+        </section>
+        <section class="calc">
+          <div class="calc__wrap">
+            <form class="calc__form">
+              <div class="calc__title">Розрахуйте точну вартість вашого ремонту
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Який ремонт?
+                </label><input class="calc__input-input" type="text"/>
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Житловий фонд
+                </label><input class="calc__input-input" type="text"/>
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Загальна площа
+                </label><input class="calc__input-input" type="text"/><span class="calc__input-farea">114 кв. м</span>
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Кількість кімнат, що потребує ремонту
+                </label><input class="calc__input-input" type="text"/>
+              </div>
+              <button class="calc__bnt">Отримати розрахунок
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
     </section>
     <div class="second--block">
       <section class="servise">

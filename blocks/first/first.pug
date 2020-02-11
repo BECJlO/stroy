@@ -20,14 +20,16 @@ mixin first()
             SPAN
             SPAN
             SPAN.green
-        +e.H1.title
-          +e.SPAN.title-fw Ремонт 
-          br
-          |в Житомирі та області з гарантією 
-          +e.SPAN.title-num 3 
-          |роки
-        +e.H4.subtitle
-          |Виключно в строк від провідних спеціалістів по фіксованим цінам
+        +e.head-text
+          +e.H1.title
+            +e.SPAN.title-fw Ремонт 
+            br
+            |в Житомирі та області<br> з гарантією 
+            +e.SPAN.title-num 3 
+            |роки
+          +e.H4.subtitle
+            |Виключно в строк від провідних спеціалістів по фіксованим цінам
+    +e.wrapper
       +e.slider
         +e.slider-wrap
           +e.slider-item
@@ -35,5 +37,5 @@ mixin first()
         +e.slider-nav
           +e.BUTTON.slider-prev.slider-nav
           +e.BUTTON.slider-next.slider-nav
-    +broadcast()
-    +calc()
+      +broadcast()
+      +calc()
