@@ -4,6 +4,8 @@
   @media #{$_sm}
   @media #{$_xs}
   &__wrap
+    position: relative
+    max-width: 630px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -36,15 +38,22 @@
         margin-right: 12px
         transform: rotate(45deg)
   &__item
+    max-width: 630px
+    // height: 537px
+    padding: 47px 34px 51px
+    border-radius: 10px
+    box-shadow: 0px 9px 18px 0 rgba(0, 1, 2, 0.14)
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
     h5
+      margin-bottom: 10px
       font-size: 24px
       font-weight: bold
       line-height: 2
       letter-spacing: 0.48px
+      text-align: center
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -63,6 +72,12 @@
       @media #{$_sm}
       @media #{$_xs}
     &-img
+      overflow: hidden
+      width: 120px
+      height: 120px
+      margin: 15px auto 17px
+      background: grey // test
+      border-radius: 60px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -73,11 +88,13 @@
         @media #{$_sm}
         @media #{$_xs}
     &-btn
+      width: 178px
+      height: 43px
       font-size: 12px
       font-weight: bold
       font-stretch: normal
       font-style: normal
-      line-height: 6.33
+      // line-height: 6.33
       letter-spacing: 0.24px
       text-align: center
       color: #161616
@@ -85,23 +102,24 @@
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
-    &-sv-block
+  &__sv-block
+    height: 28px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+  &__sv-item
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+    a
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
-    &-sv-item
-      @media #{$_lg}
-      @media #{$_md}
-      @media #{$_sm}
-      @media #{$_xs}
-      a
+      svg
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
         @media #{$_xs}
-        svg
-          @media #{$_lg}
-          @media #{$_md}
-          @media #{$_sm}
-          @media #{$_xs}

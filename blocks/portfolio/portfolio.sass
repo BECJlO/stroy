@@ -17,33 +17,57 @@
     @media #{$_sm}
     @media #{$_xs}
   &__slider
+    margin-left: 20%
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
-    &:before
-      display: block
-      width: 83px
-      height: 59px
-      content: ''
-      background: url(../images/dec__circles.png)
-    &:after
-      display: block
-      width: 83px
-      height: 59px
-      content: ''
-      background: url(../images/dec__circles.png)
-    &-wrap
+    &-item
+      z-index: 2
+      position: relative
+      overflow: hidden
+      max-width: 744px
+      border-radius: 10px
+      background: white
+      box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
+    &-wrap
+      position: relative
+      max-width: 744px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+      &:before
+        z-index: 1
+        position: absolute
+        top: -46px
+        right: -57 - 12px
+        display: block
+        width: 83px
+        height: 59px
+        content: ''
+        background: url(../images/dec__circles.png)
+      &:after
+        z-index: 1
+        position: absolute
+        bottom: -46px
+        left: -57 - 12px
+        display: block
+        width: 83px
+        height: 59px
+        content: ''
+        background: url(../images/dec__circles.png)
     &-show
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-info
+      padding: 37px 51px 53px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -62,11 +86,6 @@
       @media #{$_sm}
       @media #{$_xs}
       h5
-        @media #{$_lg}
-        @media #{$_md}
-        @media #{$_sm}
-        @media #{$_xs}
-      p
         font-size: 24px
         line-height: 1.5
         letter-spacing: 0.48px
@@ -74,12 +93,20 @@
         @media #{$_md}
         @media #{$_sm}
         @media #{$_xs}
+      p
+        @media #{$_lg}
+        @media #{$_md}
+        @media #{$_sm}
+        @media #{$_xs}
     &-btn
+      margin-top: 50px
+      width: 205px
+      height: 57px
       font-size: 14px
       font-weight: bold
       font-stretch: normal
       font-style: normal
-      line-height: 5.43
+      // line-height: 5.43
       letter-spacing: 0.28px
       text-align: center
       color: #161616
