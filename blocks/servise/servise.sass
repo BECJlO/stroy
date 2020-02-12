@@ -21,7 +21,7 @@
     flex-direction: column
     max-width: 634px
     margin-top: 30px
-    padding: 55px 60px 45px
+    padding: 53px 60px 43px
     border-radius: 10px
     box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
     background-color: #ffffff
@@ -30,6 +30,7 @@
     @media #{$_sm}
     @media #{$_xs}
     &-header
+      position: relative
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -48,10 +49,25 @@
         @media #{$_sm}
         @media #{$_xs}
       &-btn
+        position: absolute
+        right: -32px
+        top: 50%
+        width: 61px
+        height: 61px
+        margin-top: 6px
+        background: url(../images/+.png)
+        transform: translateY(-50%)
+        cursor: pointer
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
         @media #{$_xs}
+        .open-block &
+          right: -18px
+          width: 45px
+          height: 32px
+
+          background: url(../images/-.png)
     &-content
       padding-top: 36px
       padding-bottom: 49px
@@ -68,5 +84,5 @@
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
-      &.open
+      .open-block &
         display: block
