@@ -761,6 +761,7 @@ button {
 .first {
   background: url(../images/bg__1s.jpg) center right;
   background-repeat: no-repeat;
+  background: grey;
 }
 
 .first .container {
@@ -908,6 +909,7 @@ button {
 .calc__wrap {
   width: 634px;
   height: 935px;
+  padding: 44px 34px 64px;
   border-radius: 20px;
   box-shadow: 0px 21px 21px 0 rgba(0, 1, 2, 0.14);
   background-color: #ffffff;
@@ -926,6 +928,8 @@ button {
 }
 
 .calc__title {
+  max-width: 415px;
+  margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
   font-stretch: normal;
@@ -935,7 +939,54 @@ button {
   color: #000000;
 }
 
+.calc__input-block {
+  width: 100%;
+}
+
+.calc__input-block .ui-selectmenu-text {
+  margin-top: 13px;
+  margin-left: 49px;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.36px;
+  color: #000000;
+}
+
+.calc__input-block .ui-selectmenu-button {
+  width: 100%;
+  height: 76px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 12px 0 rgba(0, 1, 2, 0.14);
+  background-color: #ffffff;
+}
+
+.calc__input-block .ui-selectmenu-icon {
+  width: 20px;
+  height: 22px;
+  margin-top: 23px;
+  background: url(../images/select-arr.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calc__input-block .ui-button:hover .ui-icon,
+.calc__input-block .ui-button:focus .ui-icon,
+.calc__input-block .ui-button:active .ui-icon {
+  background: url(../images/select-arr.png);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 .calc__input-label {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -1119,7 +1170,7 @@ button {
 }
 
 .open-block .servise__item-header-btn {
-  right: -18px;
+  right: -24px;
   width: 45px;
   height: 32px;
   background: url(../images/-.png);

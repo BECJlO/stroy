@@ -18,6 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
     <!-- build:css css/vendor.css-->
     <link rel="stylesheet" href="libs/twentytwenty/css/twentytwenty.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <!-- endbuild-->
     <!-- build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css"/>
@@ -108,19 +109,38 @@
               </div>
               <div class="calc__input-block">
                 <label class="calc__input-label">Який ремонт?
-                </label><input class="calc__input-input" type="text"/>
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">Дрібний</option>
+                  <option>Середній</option>
+                  <option>Великий</option>
+                </select>
               </div>
               <div class="calc__input-block">
                 <label class="calc__input-label">Житловий фонд
-                </label><input class="calc__input-input" type="text"/>
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">Первинний</option>
+                  <option>Вторинний</option>
+                </select>
               </div>
               <div class="calc__input-block">
                 <label class="calc__input-label">Загальна площа
-                </label><input class="calc__input-input" type="text"/><span class="calc__input-farea">114 кв. м</span>
+                </label>
+                <div class="calc__input-area-slider" id="inputAreaSlider">
+                </div><input class="calc__input-input" id="areaInput" type="text" readonly="readonly"/><span class="calc__input-farea" id="areaInputSpan">кв. м</span>
               </div>
               <div class="calc__input-block">
                 <label class="calc__input-label">Кількість кімнат, що потребує ремонту
-                </label><input class="calc__input-input" type="text"/>
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
               </div>
               <button class="calc__bnt">Отримати розрахунок
               </button>
@@ -323,6 +343,7 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/twentytwenty/js/jquery.event.move.js"></script>
     <script src="libs/twentytwenty/js/jquery.twentytwenty.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- endbuild-->
     <!-- build:js js/main.js-->
     <script src="js/main.js"></script>
