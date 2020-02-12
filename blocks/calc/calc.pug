@@ -14,11 +14,13 @@ mixin calc()
           +e.SELECT.input-select
             option(selected="selected") Первинний
             option Вторинний
-        +e.input-block
+        +e.input-block.calc__slider-area
           +e.LABEL.input-label Загальна площа
-          +e.input-area-slider(id='inputAreaSlider')
-          +e.INPUT.input-input(id='areaInput' type="text" readonly)
-          +e.SPAN.input-farea(id="areaInputSpan") кв. м
+          +e.slider-area-col
+            +e.input-area-slider(id='inputAreaSlider')
+          +e.slider-text-col
+            +e.INPUT.input-input(id='areaInput' type="text" readonly)
+            +e.SPAN.input-farea(id="areaInputSpan") кв. м
         +e.input-block
           +e.LABEL.input-label Кількість кімнат, що потребує ремонту
           +e.SELECT.input-select
