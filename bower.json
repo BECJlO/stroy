@@ -1,12 +1,12 @@
 {
-  "name": "right_start",
-  "description": "gulp_pug_sass_bem_boilerplate",
-  "main": "index.js",
+  "name": "wer",
+  "description": "werwerwer",
+  "main": "werwer",
   "authors": [
-    "Alexandr Ponomarenko <a.ponomarenko@interact.agency>"
+    "werwe"
   ],
-  "license": "ISC",
-  "homepage": "",
+  "license": "wer",
+  "homepage": "wer",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,5 +16,9 @@
   ],
   "dependencies": {
     "mdi": "^1.9.33"
-  }
+  },
+  "keywords": [
+    "werwe"
+  ],
+  "private": true
 }
