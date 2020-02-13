@@ -1043,11 +1043,13 @@ a.ui-button:active,
 }
 
 .calc__slider-area-col {
-  width: 80%;
+  width: 70%;
 }
 
 .calc__slider-text-col {
-  width: 20%;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
 }
 
 .calc__input-label {
@@ -1102,6 +1104,24 @@ a.ui-button:active,
   letter-spacing: 0.42px;
   text-align: center;
   color: #161616;
+}
+
+.calc__input-area-slider.ui-widget.ui-widget-content {
+  height: 1px;
+  background: #00fce2;
+}
+
+#areaInput {
+  border: none;
+  width: 90px;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: #000000;
 }
 
 .dec-slider {
