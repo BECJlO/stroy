@@ -619,6 +619,28 @@ button {
   background: #ffc70a;
 }
 
+.twentytwenty-overlay:hover {
+  background: transparent;
+}
+
+.twentytwenty-handle {
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14);
+  border: solid 3px #ffffff;
+  background-color: #00fce2;
+  outline: none;
+}
+
+.twentytwenty-left-arrow {
+  border-right-color: black;
+}
+
+.twentytwenty-right-arrow {
+  border-left-color: black;
+}
+
 .ui-widget.ui-widget-content {
   padding: 0;
   border: none;
@@ -794,12 +816,16 @@ a.ui-button:active,
   white-space: nowrap;
   text-align: center;
   color: #ffc600;
+  transition: all .3s;
+}
+
+.header__phone:hover {
+  text-shadow: 0 2px 5px rgba(250, 200, 0, 0.5);
 }
 
 .first {
   background: url(../images/bg__1s.jpg) center right;
   background-repeat: no-repeat;
-  background: grey;
 }
 
 .first .container {
@@ -1035,6 +1061,27 @@ a.ui-button:active,
   transform: rotate(180deg);
 }
 
+.calc__input-block .ui-state-default,
+.calc__input-block .ui-widget-content .ui-state-default {
+  top: -17px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14);
+  border: solid 3px #ffffff;
+  background-color: #00fce2;
+  outline: none;
+}
+
+.calc__input-block .ui-state-default:hover,
+.calc__input-block .ui-widget-content .ui-state-default:hover {
+  box-shadow: 0px 3px 5px 0 rgba(0, 1, 2, 0.14);
+}
+
+.calc__input-block .ui-slider .ui-slider-range {
+  background-color: #00fce2;
+}
+
 .calc__slider-area {
   display: -ms-flexbox;
   display: flex;
@@ -1043,13 +1090,17 @@ a.ui-button:active,
 }
 
 .calc__slider-area-col {
-  width: 70%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(100% / 1 - 150px);
 }
 
 .calc__slider-text-col {
   display: -ms-flexbox;
   display: flex;
-  width: 30%;
+  width: 150px;
 }
 
 .calc__input-label {
@@ -1107,20 +1158,24 @@ a.ui-button:active,
 }
 
 .calc__input-area-slider.ui-widget.ui-widget-content {
+  width: calc(100% / 1 - 15px);
+  margin-left: 15px;
   height: 1px;
   background: #00fce2;
 }
 
 #areaInput {
   border: none;
-  width: 90px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: 10px;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.48px;
-  text-align: center;
+  text-align: right;
   color: #000000;
 }
 

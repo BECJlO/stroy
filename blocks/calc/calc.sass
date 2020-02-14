@@ -90,18 +90,33 @@
       background-repeat: no-repeat
     & .ui-button:hover .ui-icon
       background: url(../images/select-arr.png)
-    & .ui-button:active .ui-icon, & .ui-button:focus .ui-icon,
+    & .ui-button:active .ui-icon, & .ui-button:focus .ui-icon
       margin-top: 25px
       background: url(../images/select-arr.png)
       transform: rotate(180deg)
+    & .ui-state-default, .ui-widget-content .ui-state-default
+      top: -17px
+      width: 35px
+      height: 35px
+      border-radius: 10px
+      box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14)
+      border: solid 3px #ffffff
+      background-color: #00fce2
+      outline: none
+    & .ui-state-default:hover, .ui-widget-content .ui-state-default:hover
+      box-shadow: 0px 3px 5px 0 rgba(0, 1, 2, 0.14)
+    & .ui-slider .ui-slider-range
+      background-color: #00fce2
   &__slider-area
     display: flex
     flex-wrap: wrap
   &__slider-area-col
-    width: 70%
+    display: flex
+    align-items: center
+    width: calc(100% / 1 - 150px )
   &__slider-text-col
     display: flex
-    width: 30%
+    width: 150px
   &__input-label
     display: block
     width: 100%
@@ -162,20 +177,24 @@
     @media #{$_sm}
     @media #{$_xs}
   &__input-area-slider.ui-widget.ui-widget-content
+    width: calc(100% / 1 - 15px)
+    margin-left: 15px
     height: 1px
     background: #00fce2
     // border: 0
     // border-top: 1px solid #00fce2
 #areaInput
   border: none
-  width: 90px
+  width: 60px
+  margin-left: auto
+  margin-right: 10px
   font-size: 24px
   font-weight: bold
   font-stretch: normal
   font-style: normal
   line-height: 1.5
   letter-spacing: 0.48px
-  text-align: center
+  text-align: right
   color: #000000
 
 .dec-slider
