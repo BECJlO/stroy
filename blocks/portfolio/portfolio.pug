@@ -1,9 +1,9 @@
 mixin portfolio()
   +b.SECTION.portfolio
     +e.H2.title Наші ремонтні роботи
-    +e.slider
-      +e.slider-wrap
-        +e.slider-item
+    +e.slider.swiper-container
+      +e.slider-wrap.swiper-wrapper
+        +e.slider-item.swiper-slide
           +e.slider-show
             +e.slider-show-wrap
               +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
@@ -13,6 +13,26 @@ mixin portfolio()
               +e.H5 м. Житомир, вул. Велика Бердичівська, 48
               +e.P Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
             +e.BUTTON.slider-btn.style--btn Хочу такий ремонт
-      +e.slider-nav
-        +e.BUTTON.slider-prev.slider-nav
-        +e.BUTTON.slider-next.slider-nav
+        +e.slider-item.swiper-slide
+          +e.slider-show
+            +e.slider-show-wrap
+              +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
+              +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+          +e.slider-info
+            +e.slider-text
+              +e.H5 м. Житомир, вул. Велика Бердичівська, 48
+              +e.P Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+            +e.BUTTON.slider-btn.style--btn Хочу такий ремонт
+        +e.slider-item.swiper-slide
+          +e.slider-show
+            +e.slider-show-wrap
+              +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
+              +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+          +e.slider-info
+            +e.slider-text
+              +e.H5 м. Житомир, вул. Велика Бердичівська, 48
+              +e.P Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+            +e.BUTTON.slider-btn.style--btn Хочу такий ремонт
+    +e.slider-nav
+      +e.BUTTON.slider-prev.slider-nav
+      +e.BUTTON.slider-next.slider-nav

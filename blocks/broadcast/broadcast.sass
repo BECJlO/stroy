@@ -3,24 +3,31 @@
   grid-column-end: 5
   grid-row-start: 3
   grid-row-end: 5
+  margin-top: 82px
+  margin-left: 15px
   @media #{$_lg}
   @media #{$_md}
   @media #{$_sm}
   @media #{$_xs}
   &__title
+    margin-bottom: 22px
+    // margin-left: 14px
     font-size: 48px
     font-weight: bold
     font-stretch: normal
     font-style: normal
     line-height: 0.75
     letter-spacing: 0.96px
-    text-align: center
+    // text-align: center
     color: #000000
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
   &__subtitle
+    margin-top: 17px
+    margin-bottom: 36px
+    // margin-left: 14px
     font-size: 18px
     font-weight: 500
     font-stretch: normal
@@ -34,8 +41,11 @@
     @media #{$_sm}
     @media #{$_xs}
   &__video
+    overflow: hidden
     position: relative
     display: flex
+    width: 100%
+    max-width: 947px
     justify-content: center
     align-items: center
     @media #{$_lg}
@@ -43,6 +53,8 @@
     @media #{$_sm}
     @media #{$_xs}
     &-img
+      // width: 150px
+      // margin-right: -14px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}

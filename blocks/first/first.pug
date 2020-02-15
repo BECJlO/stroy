@@ -1,7 +1,13 @@
 mixin first()
   +b.SECTION.first
-    .dec-slider
-      IMG(src='images/back_slide.jpg').dec-slider-img
+    .dec-slider.swiper-container
+      .dec-slider-wrapper.swiper-wrapper
+        .dec-slider-item.swiper-slide
+          IMG(src='images/back_slide1.jpg').dec-slider-img
+        .dec-slider-item.swiper-slide
+          IMG(src='images/back_slide2.jpg').dec-slider-img
+        .dec-slider-item.swiper-slide
+          IMG(src='images/back_slide3.jpg').dec-slider-img
     .container
       +e.head
         +e.dots
@@ -30,10 +36,15 @@ mixin first()
           +e.H4.subtitle
             |Виключно в строк від провідних спеціалістів по фіксованим цінам
     +e.wrapper
-      +e.slider
-        +e.slider-wrap
-          +e.slider-item
-            +e.IMG(src="images/slide1.jpg").slider-img
+      +e.slider-wrapper
+        +e.slider.swiper-container
+          +e.slider-wrap.swiper-wrapper
+            +e.slider-item.swiper-slide
+              +e.IMG(src="images/slide1.jpg").slider-img
+            +e.slider-item.swiper-slide
+              +e.IMG(src="images/slide1.jpg").slider-img
+            +e.slider-item.swiper-slide
+              +e.IMG(src="images/slide1.jpg").slider-img
         +e.slider-nav
           +e.BUTTON.slider-prev.slider-nav
           +e.BUTTON.slider-next.slider-nav

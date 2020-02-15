@@ -19,6 +19,7 @@
     <!-- build:css css/vendor.css-->
     <link rel="stylesheet" href="libs/twentytwenty/css/twentytwenty.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"/>
     <!-- endbuild-->
     <!-- build:css css/main.css-->
     <link rel="stylesheet" href="css/main.css"/>
@@ -26,7 +27,7 @@
   </head>
   <body class="page">
     <header class="header" id="header">
-      <div class="header__wrap"><a class="header__logo"><img class="header__logo-img" src="images/logo.jpg" alt="" role="presentation"/></a>
+      <div class="header__wrap"><a class="header__logo" href="#"><img class="header__logo-img" src="images/logo.jpg" alt="" role="presentation"/></a>
         <nav class="header__menu" id="headerMenu">
           <ul class="header__menu-list">
             <li class="header__menu-item active"><a class="header__menu-link" href="#">Головна</a>
@@ -46,8 +47,18 @@
       </div>
     </header>
     <section class="first">
-      <div class="dec-slider">
-        <IMG class="dec-slider-img" src="images/back_slide.jpg"></IMG>
+      <div class="dec-slider swiper-container">
+        <div class="dec-slider-wrapper swiper-wrapper">
+          <div class="dec-slider-item swiper-slide">
+            <IMG class="dec-slider-img" src="images/back_slide1.jpg"></IMG>
+          </div>
+          <div class="dec-slider-item swiper-slide">
+            <IMG class="dec-slider-img" src="images/back_slide2.jpg"></IMG>
+          </div>
+          <div class="dec-slider-item swiper-slide">
+            <IMG class="dec-slider-img" src="images/back_slide3.jpg"></IMG>
+          </div>
+        </div>
       </div>
       <div class="container">
         <div class="first__head">
@@ -80,9 +91,15 @@
         </div>
       </div>
       <div class="first__wrapper">
-        <div class="first__slider">
-          <div class="first__slider-wrap">
-            <div class="first__slider-item"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
+        <div class="first__slider-wrapper">
+          <div class="first__slider swiper-container">
+            <div class="first__slider-wrap swiper-wrapper">
+              <div class="first__slider-item swiper-slide"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
+              </div>
+              <div class="first__slider-item swiper-slide"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
+              </div>
+              <div class="first__slider-item swiper-slide"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
+              </div>
             </div>
           </div>
           <div class="first__slider-nav">
@@ -146,7 +163,7 @@
                   <option>6</option>
                 </select>
               </div>
-              <button class="calc__bnt">Отримати розрахунок
+              <button class="calc__bnt style style--btn">Отримати розрахунок
               </button>
             </form>
           </div>
@@ -219,21 +236,23 @@
         </div>
       </section>
       <section class="discount">
-        <div class="discount__img"><img class="discount__img-img" src="images/bg__disc.jpg" alt="" role="presentation"/>
-        </div>
-        <div class="discount__content">
-          <div class="discount__title">Знижка до 30% при проходженні нашого КВІЗУ
+        <div class="discount__wrap">
+          <div class="discount__img"><img class="discount__img-img" src="images/bg__disc.jpg" alt="" role="presentation"/>
           </div>
-          <div class="discount__text">
-             Заповніть форму, дізнайтеся подробиці акції 
-            та отримайте ваш унікальний дизайн-проект
+          <div class="discount__content">
+            <div class="discount__title">Знижка до 30% при проходженні нашого КВІЗУ
+            </div>
+            <div class="discount__text">
+               Заповніть форму, дізнайтеся подробиці акції 
+              та отримайте ваш унікальний дизайн-проект
+            </div>
+            <button class="discount__btn style style--btn">Відповісти на питання
+            </button>
           </div>
-          <button class="discount__btn style style--btn">Відповісти на питання
-          </button>
-        </div>
-        <div class="discount__decelem"><svg xmlns="http://www.w3.org/2000/svg" width="46.677" height="33.335">
+          <div class="discount__decelem"><svg xmlns="http://www.w3.org/2000/svg" width="46.677" height="33.335">
 <path fill="#00FCE2" fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
 </svg>
+          </div>
         </div>
       </section>
     </div>
@@ -241,9 +260,41 @@
       <section class="portfolio">
         <h2 class="portfolio__title">Наші ремонтні роботи
         </h2>
-        <div class="portfolio__slider">
-          <div class="portfolio__slider-wrap">
-            <div class="portfolio__slider-item">
+        <div class="portfolio__slider swiper-container">
+          <div class="portfolio__slider-wrap swiper-wrapper">
+            <div class="portfolio__slider-item swiper-slide">
+              <div class="portfolio__slider-show">
+                <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                </div>
+              </div>
+              <div class="portfolio__slider-info">
+                <div class="portfolio__slider-text">
+                  <h5>м. Житомир, вул. Велика Бердичівська, 48
+                  </h5>
+                  <p>Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+                  </p>
+                </div>
+                <button class="portfolio__slider-btn style style--btn">Хочу такий ремонт
+                </button>
+              </div>
+            </div>
+            <div class="portfolio__slider-item swiper-slide">
+              <div class="portfolio__slider-show">
+                <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                </div>
+              </div>
+              <div class="portfolio__slider-info">
+                <div class="portfolio__slider-text">
+                  <h5>м. Житомир, вул. Велика Бердичівська, 48
+                  </h5>
+                  <p>Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+                  </p>
+                </div>
+                <button class="portfolio__slider-btn style style--btn">Хочу такий ремонт
+                </button>
+              </div>
+            </div>
+            <div class="portfolio__slider-item swiper-slide">
               <div class="portfolio__slider-show">
                 <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
                 </div>
@@ -260,12 +311,12 @@
               </div>
             </div>
           </div>
-          <div class="portfolio__slider-nav">
-            <button class="portfolio__slider-prev slider-nav">
-            </button>
-            <button class="portfolio__slider-next slider-nav">
-            </button>
-          </div>
+        </div>
+        <div class="portfolio__slider-nav">
+          <button class="portfolio__slider-prev slider-nav">
+          </button>
+          <button class="portfolio__slider-next slider-nav">
+          </button>
         </div>
       </section>
       <section class="contacts">
@@ -293,15 +344,49 @@
       </section>
       <section class="reviews">
         <div class="reviews__wrap">
-          <div class="reviews__slider">
+          <div class="reviews__slider swiper-container">
             <div class="reviews__slider-nav">
               <button class="reviews__slider-prev slider-nav">
               </button>
               <button class="reviews__slider-next slider-nav">
               </button>
             </div>
-            <div class="reviews__slider-wrap">
-              <div class="reviews__item">
+            <div class="reviews__slider-wrap swiper-wrapper">
+              <div class="reviews__item swiper-slide">
+                <h5>Тамара Киринаева
+                </h5>
+                <p>Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
+                </p>
+                <div class="reviews__item-img">
+                  <div class="reviews__item-img-wrap"><img class="reviews__item-img-img" src="images/rewiews.jpg" alt="" role="presentation"/>
+                  </div>
+                </div>
+                <button class="reviews__item-btn style style--btn">Відео відгук
+                </button>
+                <div class="reviews__sv-block"><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a>
+                </div>
+              </div>
+              <div class="reviews__item swiper-slide">
+                <h5>Тамара Киринаева
+                </h5>
+                <p>Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
+                </p>
+                <div class="reviews__item-img">
+                  <div class="reviews__item-img-wrap"><img class="reviews__item-img-img" src="images/rewiews.jpg" alt="" role="presentation"/>
+                  </div>
+                </div>
+                <button class="reviews__item-btn style style--btn">Відео відгук
+                </button>
+                <div class="reviews__sv-block"><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a>
+                </div>
+              </div>
+              <div class="reviews__item swiper-slide">
                 <h5>Тамара Киринаева
                 </h5>
                 <p>Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
@@ -322,32 +407,33 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <section class="map"><img class="map__map-img" src="images/map.jpg" alt="" role="presentation"/>
-        </section>
-        <div class="footer__wrap">
-          <nav class="footer__nav">
-            <ul>
-              <li><a href="">Головна</a>
-              </li>
-              <li><a href="">Блог</a>
-              </li>
-              <li><a href="">Дизайн-проекти</a>
-              </li>
-              <li><a href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="footer__policy">Политика конфиденфиальности
-          </div>
-        </div>
-      </footer>
     </div>
+    <footer class="footer">
+      <section class="map"><img class="map__map-img" src="images/map.jpg" alt="" role="presentation"/>
+      </section>
+      <div class="footer__wrap">
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="">Головна</a>
+            </li>
+            <li><a href="">Блог</a>
+            </li>
+            <li><a href="">Дизайн-проекти</a>
+            </li>
+            <li><a href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__policy">Политика конфиденфиальности
+        </div>
+      </div>
+    </footer>
     <!-- build:js js/vendor.js-->
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/twentytwenty/js/jquery.event.move.js"></script>
     <script src="libs/twentytwenty/js/jquery.twentytwenty.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <!-- endbuild-->
     <!-- build:js js/main.js-->
     <script src="js/main.js"></script>

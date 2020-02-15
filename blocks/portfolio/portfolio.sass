@@ -1,4 +1,8 @@
 .portfolio
+  grid-column-start: 2
+  grid-column-end: 3
+  grid-row-start: 1
+  grid-row-end: 2
   @media #{$_lg}
   @media #{$_md}
   @media #{$_sm}
@@ -18,6 +22,8 @@
     @media #{$_xs}
   &__slider
     margin-left: 20%
+    max-height: 702px
+    padding: 30px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -51,6 +57,10 @@
         height: 59px
         content: ''
         background: url(../images/dec__circles.png)
+        @media #{$_lg}
+        @media #{$_md}
+        @media #{$_sm}
+        @media #{$_xs}
       &:after
         z-index: 1
         position: absolute
@@ -61,6 +71,10 @@
         height: 59px
         content: ''
         background: url(../images/dec__circles.png)
+        @media #{$_lg}
+        @media #{$_md}
+        @media #{$_sm}
+        @media #{$_xs}
     &-show
       @media #{$_lg}
       @media #{$_md}
@@ -99,7 +113,7 @@
         @media #{$_sm}
         @media #{$_xs}
     &-btn
-      margin-top: 50px
+      margin-top: 44px
       width: 205px
       height: 57px
       font-size: 14px

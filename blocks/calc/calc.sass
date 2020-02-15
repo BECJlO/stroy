@@ -4,6 +4,8 @@
   grid-column-end: 3
   grid-row-start: 2
   grid-row-end: 4
+  margin-top: -262px
+  margin-left: -78px
   @media #{$_lg}
   @media #{$_md}
   @media #{$_sm}
@@ -22,9 +24,9 @@
     z-index: 2
     position: relative
     width: 634px// ad
-    height: 935px// ad
+    max-height: 935px// ad
     padding: 44px 34px 64px
-    border-radius: 20px
+    border-radius: 10px
     box-shadow: 0px 21px 21px 0 rgba(0, 1, 2, 0.14)
     background-color: #ffffff
     @media #{$_lg}
@@ -37,7 +39,7 @@
     @media #{$_sm}
     @media #{$_xs}
   &__title
-    max-width: 415px
+    max-width: 420px
     margin: 0 auto
     font-size: 30px
     font-weight: bold
@@ -77,6 +79,9 @@
       border-radius: 10px
       box-shadow: 0px 5px 12px 0 rgba(0, 1, 2, 0.14)
       background-color: #ffffff
+      transition: all .3s
+      &:hover
+        box-shadow: 0px 2px 5px 0 rgba(0, 1, 2, 0.14)
     & .ui-selectmenu-button-open
       border-bottom-left-radius: 0
       border-bottom-right-radius: 0
@@ -95,9 +100,9 @@
       background: url(../images/select-arr.png)
       transform: rotate(180deg)
     & .ui-state-default, .ui-widget-content .ui-state-default
-      top: -17px
-      width: 35px
-      height: 35px
+      top: -20px
+      width: 40px
+      height: 40px
       border-radius: 10px
       box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14)
       border: solid 3px #ffffff
@@ -109,13 +114,16 @@
       background-color: #00fce2
   &__slider-area
     display: flex
+    margin: 14px auto 50px
     flex-wrap: wrap
   &__slider-area-col
     display: flex
+    margin-top: 12px
     align-items: center
     width: calc(100% / 1 - 150px )
   &__slider-text-col
     display: flex
+    margin-top: 10px
     width: 150px
   &__input-label
     display: block
@@ -172,10 +180,13 @@
     letter-spacing: 0.42px
     text-align: center
     color: #161616
+    transition: all .3s
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+    &:hover
+      box-shadow: 0px 2px 4px 0 rgba(0, 1, 2, 0.14)
   &__input-area-slider.ui-widget.ui-widget-content
     width: calc(100% / 1 - 15px)
     margin-left: 15px
@@ -197,9 +208,3 @@
   text-align: right
   color: #000000
 
-.dec-slider
-  z-index: 0
-  position: absolute
-  box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
-  img
-    display: block

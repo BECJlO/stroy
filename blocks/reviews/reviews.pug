@@ -1,12 +1,40 @@
 mixin reviews()
   +b.SECTION.reviews
     +e.wrap
-      +e.slider
+      +e.slider.swiper-container
         +e.slider-nav
           +e.BUTTON.slider-prev.slider-nav
           +e.BUTTON.slider-next.slider-nav
-        +e.slider-wrap
-          +e.item
+        +e.slider-wrap.swiper-wrapper
+          +e.item.swiper-slide
+            +e.H5 Тамара Киринаева
+            +e.P Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
+            +e.item-img
+              +e.item-img-wrap
+                +e.IMG(src="images/rewiews.jpg").item-img-img
+            +e.BUTTON.item-btn.style--btn Відео відгук
+            +e.sv-block
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+          +e.item.swiper-slide
+            +e.H5 Тамара Киринаева
+            +e.P Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
+            +e.item-img
+              +e.item-img-wrap
+                +e.IMG(src="images/rewiews.jpg").item-img-img
+            +e.BUTTON.item-btn.style--btn Відео відгук
+            +e.sv-block
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+              +e.A(href="#").sv-item
+                svg
+          +e.item.swiper-slide
             +e.H5 Тамара Киринаева
             +e.P Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
             +e.item-img

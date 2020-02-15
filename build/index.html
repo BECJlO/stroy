@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8"/>
+    <meta content="Oleh Devolp" name="author"/>
+    <meta content="Landing" name="description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png"/>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="page">
+    <header class="header" id="header">
+      <div class="header__wrap"><a class="header__logo"><img class="header__logo-img" src="images/logo.jpg" alt="" role="presentation"/></a>
+        <nav class="header__menu" id="headerMenu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item active"><a class="header__menu-link" href="#">Головна</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Блог</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Дизайн-проекти</a>
+            </li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Контакти</a>
+            </li>
+          </ul>
+          <button class="header__get-call style style--btn">Замовити дзвінок
+          </button><a class="header__phone">+38 (098) 936 55 91</a>
+          <div class="header__langswitch">
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="first">
+      <div class="dec-slider">
+        <IMG class="dec-slider-img" src="images/back_slide.jpg"></IMG>
+      </div>
+      <div class="container">
+        <div class="first__head">
+          <div class="first__dots">
+            <div class="first__dots-line">
+              <SPAN></SPAN>
+              <SPAN class="yellow"></SPAN>
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+            </div>
+            <div class="first__dots-line">
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+            </div>
+            <div class="first__dots-line">
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+              <SPAN></SPAN>
+              <SPAN class="green"></SPAN>
+            </div>
+          </div>
+          <div class="first__head-text">
+            <h1 class="first__title"><span class="first__title-fw">Ремонт </span><br/>в Житомирі та області<br> з гарантією <span class="first__title-num">3 </span>роки
+            </h1>
+            <h4 class="first__subtitle">Виключно в строк від провідних спеціалістів по фіксованим цінам
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="first__wrapper">
+        <div class="first__slider">
+          <div class="first__slider-wrap">
+            <div class="first__slider-item"><img class="first__slider-img" src="images/slide1.jpg" alt="" role="presentation"/>
+            </div>
+          </div>
+          <div class="first__slider-nav">
+            <button class="first__slider-prev slider-nav">
+            </button>
+            <button class="first__slider-next slider-nav">
+            </button>
+          </div>
+        </div>
+        <section class="broadcast">
+          <h2 class="broadcast__title">Як ми працюємо online?
+          </h2>
+          <h4 class="broadcast__subtitle">Пряма трансляція з об'єкту
+          </h4>
+          <div class="broadcast__video"><img class="broadcast__video-img" src="images/bg__broadcast.jpg" alt="" role="presentation"/>
+            <button class="broadcast__video-btn">
+            </button>
+          </div>
+        </section>
+        <section class="calc">
+          <div class="calc__wrap">
+            <form class="calc__form">
+              <div class="calc__title">Розрахуйте точну вартість вашого ремонту
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Який ремонт?
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">Дрібний</option>
+                  <option>Середній</option>
+                  <option>Великий</option>
+                </select>
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Житловий фонд
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">Первинний</option>
+                  <option>Вторинний</option>
+                </select>
+              </div>
+              <div class="calc__input-block calc__slider-area">
+                <label class="calc__input-label">Загальна площа
+                </label>
+                <div class="calc__slider-area-col">
+                  <div class="calc__input-area-slider" id="inputAreaSlider">
+                  </div>
+                </div>
+                <div class="calc__slider-text-col"><input class="calc__input-input" id="areaInput" type="text" readonly="readonly"/><span class="calc__input-farea" id="areaInputSpan">кв. м</span>
+                </div>
+              </div>
+              <div class="calc__input-block">
+                <label class="calc__input-label">Кількість кімнат, що потребує ремонту
+                </label>
+                <select class="calc__input-select">
+                  <option selected="selected">1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </div>
+              <button class="calc__bnt">Отримати розрахунок
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="second--block">
+      <section class="servise">
+        <div class="servise__title">Які послуги ми надаємо?
+        </div>
+        <div class="servise__item open-block">
+          <div class="servise__item-header">
+            <div class="servise__item-header-text">Дрібні ремонтні послуги
+            </div>
+            <div class="servise__item-header-btn">
+            </div>
+          </div>
+          <div class="servise__item-content">
+            Втомилися шукати надійного спеціаліста,<br> 
+            який би вирішив ваші дрібні побутові проблеми? 
+            Об'єм роботи - не головне для майстрів нашої команди.<br> 
+            Лічені години - і ваші дрібні побутові питання<br>
+            разом з нами будуть вирішені
+          </div>
+        </div>
+        <div class="servise__item">
+          <div class="servise__item-header">
+            <div class="servise__item-header-text">Косметичний ремонт
+            </div>
+            <div class="servise__item-header-btn">
+            </div>
+          </div>
+          <div class="servise__item-content">
+            Втомилися шукати надійного спеціаліста, 
+            який би вирішив ваші дрібні побутові проблеми? 
+            Об'єм роботи - не головне для майстрів нашої команди. 
+            Лічені години - і ваші дрібні побутові питання
+            разом з нами будуть вирішені
+          </div>
+        </div>
+        <div class="servise__item">
+          <div class="servise__item-header">
+            <div class="servise__item-header-text">Капітальний ремонт
+            </div>
+            <div class="servise__item-header-btn">
+            </div>
+          </div>
+          <div class="servise__item-content">
+            Втомилися шукати надійного спеціаліста, 
+            який би вирішив ваші дрібні побутові проблеми? 
+            Об'єм роботи - не головне для майстрів нашої команди. 
+            Лічені години - і ваші дрібні побутові питання
+            разом з нами будуть вирішені
+          </div>
+        </div>
+        <div class="servise__item">
+          <div class="servise__item-header">
+            <div class="servise__item-header-text">Ремонт під ключ
+            </div>
+            <div class="servise__item-header-btn">
+            </div>
+          </div>
+          <div class="servise__item-content">
+            Втомилися шукати надійного спеціаліста, 
+            який би вирішив ваші дрібні побутові проблеми? 
+            Об'єм роботи - не головне для майстрів нашої команди. 
+            Лічені години - і ваші дрібні побутові питання
+            разом з нами будуть вирішені
+          </div>
+        </div>
+      </section>
+      <section class="discount">
+        <div class="discount__img"><img class="discount__img-img" src="images/bg__disc.jpg" alt="" role="presentation"/>
+        </div>
+        <div class="discount__content">
+          <div class="discount__title">Знижка до 30% при проходженні нашого КВІЗУ
+          </div>
+          <div class="discount__text">
+             Заповніть форму, дізнайтеся подробиці акції 
+            та отримайте ваш унікальний дизайн-проект
+          </div>
+          <button class="discount__btn style style--btn">Відповісти на питання
+          </button>
+        </div>
+        <div class="discount__decelem"><svg xmlns="http://www.w3.org/2000/svg" width="46.677" height="33.335">
+<path fill="#00FCE2" fill-rule="evenodd" d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 10a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM12.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM22.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM32.5 20a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5z"/>
+</svg>
+        </div>
+      </section>
+    </div>
+    <div class="third--block">
+      <section class="portfolio">
+        <h2 class="portfolio__title">Наші ремонтні роботи
+        </h2>
+        <div class="portfolio__slider">
+          <div class="portfolio__slider-wrap">
+            <div class="portfolio__slider-item">
+              <div class="portfolio__slider-show">
+                <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                </div>
+              </div>
+              <div class="portfolio__slider-info">
+                <div class="portfolio__slider-text">
+                  <h5>м. Житомир, вул. Велика Бердичівська, 48
+                  </h5>
+                  <p>Ремонт квартири під ключ. Площа - 62 кв.м. Строк - 80 днів.
+                  </p>
+                </div>
+                <button class="portfolio__slider-btn style style--btn">Хочу такий ремонт
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__slider-nav">
+            <button class="portfolio__slider-prev slider-nav">
+            </button>
+            <button class="portfolio__slider-next slider-nav">
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__item">
+          <div class="contacts__item-icon"> 
+          </div>
+          <div class="contacts__item-text">+38 (098) 936-55-91
+          </div>
+        </div>
+        <div class="contacts__item">
+          <div class="contacts__item-icon">
+          </div>
+          <div class="contacts__item-text">+38 (073) 936-55-91
+          </div>
+        </div>
+        <div class="contacts__email">remontztzt@gmail.com
+        </div>
+        <address class="contacts__address">Житомир, вул. Небесної сотні, 44
+        </address>
+        <div class="contacts__sv"><a href="">
+          <svg></svg></a><a href="">
+          <svg></svg></a><a href="">
+          <svg></svg></a>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrap">
+          <div class="reviews__slider">
+            <div class="reviews__slider-nav">
+              <button class="reviews__slider-prev slider-nav">
+              </button>
+              <button class="reviews__slider-next slider-nav">
+              </button>
+            </div>
+            <div class="reviews__slider-wrap">
+              <div class="reviews__item">
+                <h5>Тамара Киринаева
+                </h5>
+                <p>Заказывали ремонт 2-х комнат и кухни. Очень ответственные<br> и профессиональные сотрудники. Спальня, зал, кабинет – <br>все стильно и доведено до блеска по качеству!<br> Мы очень довольны.
+                </p>
+                <div class="reviews__item-img">
+                  <div class="reviews__item-img-wrap"><img class="reviews__item-img-img" src="images/rewiews.jpg" alt="" role="presentation"/>
+                  </div>
+                </div>
+                <button class="reviews__item-btn style style--btn">Відео відгук
+                </button>
+                <div class="reviews__sv-block"><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a><a class="reviews__sv-item" href="#">
+                  <svg></svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <section class="map"><img class="map__map-img" src="images/map.jpg" alt="" role="presentation"/>
+        </section>
+        <div class="footer__wrap">
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="">Головна</a>
+              </li>
+              <li><a href="">Блог</a>
+              </li>
+              <li><a href="">Дизайн-проекти</a>
+              </li>
+              <li><a href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__policy">Политика конфиденфиальности
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

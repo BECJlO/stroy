@@ -2,6 +2,7 @@
   // overflow: hidden
   max-width: 100%
   // margin-right: -20px
+  background: white
   height: 128px
   box-shadow: 0px 21px 21px 0 rgba(0, 1, 2, 0.14)
   @media #{$_lg}
@@ -44,6 +45,7 @@
     &-list
       width: 100%
       display: flex
+      padding: 14px 0
       justify-content: center
       align-self: stretch
       @media #{$_lg}
@@ -59,15 +61,20 @@
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
-      &.active:after, &:hover:after
+      &:after
         position: absolute
         bottom: 0
         left: 0
         display: block
         content: ''
-        width: 43px
+        width: 0px
         height: 1px
         background-color: #00fce2
+        transition: width .3s
+      &.active:after, &:hover:after
+        width: 43px
+      &:hover .header__menu-link
+        color: rgba(14, 14, 14, 0.72)
     &-link
       font-family: 'Geometria'
       font-size: 21px
@@ -78,6 +85,7 @@
       letter-spacing: 0.42px
       text-align: center
       color: #0e0e0e
+      transition: color
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -103,12 +111,14 @@
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+    &:hover
+      box-shadow: 0px 2px 4px 0 rgba(0, 1, 2, 0.14)
   &__phone
     font-size: 21px
     font-weight: bold
     font-stretch: normal
     font-style: normal
-    // line-height: 3.62
+    line-height: 1
     letter-spacing: 0.42px
     white-space: nowrap
     text-align: center
@@ -125,3 +135,12 @@
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+
+.sticky
+  z-index: 100
+  position: fixed
+  top: 0
+  width: 100%
+
+.sticky + .first
+  padding-top: 102px

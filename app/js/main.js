@@ -1,3 +1,15 @@
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 $(document).ready(function() {
     $('.portfolio__slider-show-wrap').twentytwenty({
         default_offset_pct: 0.35,
@@ -28,6 +40,66 @@ $(document).ready(function() {
             $(this).closest(".servise__item").addClass("open-block");
         }
     });
-    
+    var firstScreenSliderBack = new Swiper('.dec-slider', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        speed: 800,
+        spaceBetween: 500,
+        effect: 'fade',
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.first__slider-next',
+        prevEl: '.first__slider-prev',
+        },
+
+    });
+    var firstScreenSliderFront = new Swiper('.first__slider', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+        speed: 800,
+        spaceBetween: 300,
+        effect: 'cube',
+
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.first__slider-next',
+            prevEl: '.first__slider-prev',
+        }
+
+        });
+
+    var portfolio__slider = new Swiper('.portfolio__slider', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+        speed: 1500,
+        spaceBetween: 300,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.portfolio__slider-next',
+            prevEl: '.portfolio__slider-prev',
+        }
+    });
+
+    var reviewsSlider = new Swiper('.reviews__slider', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        speed: 1500,
+        spaceBetween: 300,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.reviews__slider-next',
+            prevEl: '.reviews__slider-prev',
+        }
+    });
+
+
 });
 
