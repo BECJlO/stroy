@@ -7,7 +7,16 @@
   @media #{$_md}
   @media #{$_sm}
   @media #{$_xs}
+  &__wrapper
+    display: flex
+    // width: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    height: 100%
+    margin-right: -88px
   &__title
+    width: 100%
+    margin-bottom: 64px
     font-size: 48px
     font-weight: bold
     font-stretch: normal
@@ -21,32 +30,19 @@
     @media #{$_sm}
     @media #{$_xs}
   &__slider
-    margin-left: 20%
+    z-index: 2
+    position: relative
+    margin: -30px
+    width: calc(100% / 1 + 60px)
     max-height: 702px
     padding: 30px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
-    &-item
-      z-index: 2
+    &-overlay
       position: relative
-      overflow: hidden
-      max-width: 744px
-      border-radius: 10px
-      background: white
-      box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
-      @media #{$_lg}
-      @media #{$_md}
-      @media #{$_sm}
-      @media #{$_xs}
-    &-wrap
-      position: relative
-      max-width: 744px
-      @media #{$_lg}
-      @media #{$_md}
-      @media #{$_sm}
-      @media #{$_xs}
+      width: 84%//84.546%
       &:before
         z-index: 1
         position: absolute
@@ -75,6 +71,52 @@
         @media #{$_md}
         @media #{$_sm}
         @media #{$_xs}
+    &-item
+      z-index: 2
+      position: relative
+      overflow: hidden
+      max-width: 744px
+      border-radius: 10px
+      background: white
+      box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+    &-wrap
+      // max-width: 744px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+      // &:before
+      //   z-index: 1
+      //   position: absolute
+      //   top: -46px
+      //   right: -57 - 12px
+      //   display: block
+      //   width: 83px
+      //   height: 59px
+      //   content: ''
+      //   background: url(../images/dec__circles.png)
+      //   @media #{$_lg}
+      //   @media #{$_md}
+      //   @media #{$_sm}
+      //   @media #{$_xs}
+      // &:after
+      //   z-index: 1
+      //   position: absolute
+      //   bottom: -46px
+      //   left: -57 - 12px
+      //   display: block
+      //   width: 83px
+      //   height: 59px
+      //   content: ''
+      //   background: url(../images/dec__circles.png)
+      //   @media #{$_lg}
+      //   @media #{$_md}
+      //   @media #{$_sm}
+      //   @media #{$_xs}
     &-show
       @media #{$_lg}
       @media #{$_md}
@@ -129,16 +171,22 @@
       @media #{$_sm}
       @media #{$_xs}
     &-nav
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: center
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-prev
+      margin: 40px auto
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-next
+      margin: 40px auto
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}

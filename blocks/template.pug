@@ -40,12 +40,13 @@ html(lang="ru")
 
 					
 			.second--block
+				.second--block__wrapper
 
-				block servise
-					+servise()
+					block servise
+						+servise()
 
-				block discount
-					+discount()
+					block discount
+						+discount()
 			
 			.third--block
 
@@ -67,12 +68,13 @@ html(lang="ru")
 				script( src="libs/twentytwenty/js/jquery.event.move.js")
 				script( src="libs/twentytwenty/js/jquery.twentytwenty.js")
 				//- script( src="libs/jquery-ui/jquery-ui.js")
-				script( src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
 				//- script( src="libs/fancybox/dist/jquery.fancybox.min.js")
-				//- script( src="libs/swiper/package/js/swiper.js")
-				script( src="https://unpkg.com/swiper/js/swiper.js")
+				script( src="libs/swiper/package/js/swiper.js")
+				//- script( src="https://unpkg.com/swiper/js/swiper.js")
 				//- script( src="libs/parsleyjs/dist/parsley.min.js")
 				// endbuild
+
+				script( src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
 
 			block scripts
 				// build:js js/main.js
