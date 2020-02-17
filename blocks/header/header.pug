@@ -1,20 +1,20 @@
 mixin header()
   +b.HEADER.header(id="header")
     +e.wrap
-      +e.A(href='#').logo
+      +e.A(href='#first').logo.wow.bounceIn(data-wow-duration="1s" data-wow-delay="0s")
         +e.IMG(src='images/logo.jpg').logo-img
-      +e.NAV#headerMenu.menu
+      +e.NAV#headerMenu.menu.wow.bounceInLeft(data-wow-duration="1s" data-wow-delay=".2s")
         +e.UL.menu-list
           +e.LI.menu-item.active
-            +e.A(href="#").menu-link Головна
+            +e.A(href="#first").menu-link Головна
           +e.LI.menu-item
-            +e.A(href="#").menu-link Блог
+            +e.A(href="#servise").menu-link Блог
           +e.LI.menu-item
-            +e.A(href="#").menu-link Дизайн-проекти
+            +e.A(href="#portfolio").menu-link Дизайн-проекти
           +e.LI.menu-item
-            +e.A(href="#").menu-link Контакти
-        +e.BUTTON.get-call.style--btn Замовити дзвінок
-        +e.A.phone +38 (098) 936 55 91
+            +e.A(href="#contacts").menu-link Контакти
+        +e.BUTTON.get-call.style--btn.wow.bounceInDown(data-wow-duration="1s" data-wow-delay=".6s") Замовити дзвінок
+        +e.A.phone.wow.bounceInDown(data-wow-duration="1s" data-wow-delay=".5s") +38 (098) 936 55 91
         +e.langswitch
 
 

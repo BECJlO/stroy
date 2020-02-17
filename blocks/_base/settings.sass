@@ -29,11 +29,21 @@ button
 .second--block
   background: #ffc600
   // padding: 100px
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    display: block
+  @media #{$_xs}
   .second--block__wrapper
     display: grid
     margin-bottom: -114px
     grid-template-columns: auto 800px 800px auto 
     grid-template-rows: auto auto 50px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      display: block
+    @media #{$_xs}
 
 
 .third--block
@@ -43,6 +53,13 @@ button
   grid-template-rows: auto auto auto
   background: url(../images/bg__3s.jpg) center right
   background-repeat: no-repeat
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    display: block
+    background: url(../images/mob-bottom.jpg) center center
+    background-repeat: no-repeat
+  @media #{$_xs}
 
 .style--btn
   display: block

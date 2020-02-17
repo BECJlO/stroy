@@ -6,6 +6,8 @@
   @media #{$_lg}
   @media #{$_md}
   @media #{$_sm}
+    background: url(../images/bg_mobile.jpg)
+    background-size: cover
   @media #{$_xs}
   .container
     z-index: 2
@@ -22,6 +24,7 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      justify-content: center
     @media #{$_xs}
   &__dots
     display: flex
@@ -32,6 +35,7 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      display: none
     @media #{$_xs}
     &-line
       display: flex
@@ -62,6 +66,11 @@
         @media #{$_xs}
   &__head-text
     margin-left: 38px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      margin: 0
+    @media #{$_xs}
   &__title
     margin: 0
     margin-top: 6px
@@ -77,6 +86,8 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      color: white
+      text-align: center
     @media #{$_xs}
     &-fw
       display: inline-block
@@ -110,6 +121,7 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      display: none
     @media #{$_xs}
   &__wrapper
     width: 100%
@@ -117,11 +129,16 @@
     margin-bottom: -135px
     position: relative
     display: grid
-    grid-template-columns: auto 800px 800px auto 
+    grid-template-columns: auto auto auto auto 
     grid-template-rows: auto auto auto auto
     justify-content: flex-end
     justify-items: center
     align-items: center
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      display: block
+    @media #{$_xs}
   &__slider
     max-width: 685px
     max-height: 858px
@@ -148,6 +165,7 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        display: none
       @media #{$_xs}
     &-wrap
       @media #{$_lg}
@@ -192,12 +210,34 @@
 
 .dec-slider
   // overflow: hidden
-  max-width: 1100px
-  height: 732px
+  // max-width: 1100px
+  width: calc(57.743% + 30px)
+  max-height: 762px
+  padding: 0 30px 30px 0
   z-index: 0 // -1
   position: absolute
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    display: none
+  @media #{$_xs}
 
 .dec-slider-wrapper
 
 .dec-slider-item
+  height: 100%
   box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
+  img
+    display: block
+    height: 100%
+    width: 100%
+
+.mobile-ab
+  display: none
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    display: block
+  @media #{$_xs}
+  &-show
+    &-show-wrap

@@ -11,8 +11,27 @@ function myFunction() {
   }
 }
 $(document).ready(function() {
+    //Smooth scrolling when clicking an anchor link
+    var $root = $('html, body');
+    $('a[href^="#"]').click(function() {
+        var href = $.attr(this, 'href');
+        $root.animate({
+            scrollTop: $(href).offset().top
+        }, 500, function () {
+            window.location.hash = href;
+        });
+        return false;
+    });
     $('.portfolio__slider-show-wrap').twentytwenty({
         default_offset_pct: 0.35,
+        no_overlay: false,
+        before_label: '', // Set a custom before label
+        after_label: '',
+        move_slider_on_hover: false,
+        move_with_handle_only: false
+    });
+    $('.mobile-ab-show-wrap').twentytwenty({
+        default_offset_pct: 0.5,
         no_overlay: false,
         before_label: '', // Set a custom before label
         after_label: '',
@@ -99,7 +118,7 @@ $(document).ready(function() {
             prevEl: '.reviews__slider-prev',
         }
     });
-
+    new WOW().init();
 
 });
 
