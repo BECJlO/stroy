@@ -11,6 +11,7 @@
   @media #{$_md}
   @media #{$_sm}
     margin: 0
+    padding: 0 44px
   @media #{$_xs}
   &:after
     z-index: 1
@@ -22,10 +23,15 @@
     height: 59px
     content: ''
     background: url(../images/dec__circles.png)
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      display: none
+    @media #{$_xs}
   &__wrap
     z-index: 2
     position: relative
-    width: 634px// ad
+    max-width: 634px// ad
     max-height: 935px// ad
     padding: 44px 34px 64px
     border-radius: 10px
