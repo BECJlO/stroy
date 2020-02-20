@@ -14,6 +14,12 @@
     flex-wrap: wrap
     height: 100%
     margin-right: -88px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+      max-width: 100%
+      flex-direction: column
+    @media #{$_xs}
   &__title
     width: 100%
     margin-bottom: 64px
@@ -28,6 +34,9 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      margin-bottom: 53px
+      font-size: 42px
+      text-align: center
     @media #{$_xs}
   &__slider
     z-index: 2
@@ -39,10 +48,19 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      width: 100%
+      max-height: none
+      margin: 0
+      padding: 0
     @media #{$_xs}
     &-overlay
       position: relative
       width: 84%//84.546%
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+        width: 100%
+      @media #{$_xs}
       &:before
         z-index: 1
         position: absolute
@@ -56,6 +74,7 @@
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
+          display: none
         @media #{$_xs}
       &:after
         z-index: 1
@@ -70,6 +89,7 @@
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
+          display: none
         @media #{$_xs}
     &-item
       z-index: 2
@@ -82,12 +102,18 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        max-width: 100%
+        width: 100%
+        border-radius: 0
+        box-shadow: none
       @media #{$_xs}
     &-wrap
       // max-width: 744px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        // display: block
+        flex-direction: column
       @media #{$_xs}
       // &:before
       //   z-index: 1
@@ -121,12 +147,23 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        width: 100%
+        box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
       @media #{$_xs}
+      &-wrap
+        img
+          width: 100%
     &-info
       padding: 37px 51px 53px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        z-index: 2
+        position: relative
+        background: white
+        margin: -50px 43px 44px
+        border-radius: 10px
+        box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
       @media #{$_xs}
     &-text
       font-size: 18px
@@ -178,6 +215,7 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        display: none
       @media #{$_xs}
     &-prev
       margin: 40px auto
@@ -193,3 +231,22 @@
       @media #{$_xs}
       &:after
         transform: rotate(135deg)
+  &__more
+    width: 457px
+    height: 85px
+    margin: 4px auto 0
+    object-fit: contain
+    border-radius: 10px
+    box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14)
+    border: solid 3px #ffffff
+    background-color: #ffba00
+    font-size: 21px
+    font-weight: bold
+    // line-height: 6.4
+    letter-spacing: 0.9px
+    text-align: center
+    color: #161616
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
