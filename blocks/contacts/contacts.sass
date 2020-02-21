@@ -25,17 +25,25 @@
       display: block
     @media #{$_xs}
   &__item
+    margin: 0 auto
     margin-bottom: 41px
+    text-align: center
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
     &-icon
+      position: relative
+      display: inline-block
+      margin-right: 40px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
+      & img
+        margin-bottom: -25%
     &-text
+      display: inline-block
       font-size: 30px
       font-weight: bold
       font-stretch: normal

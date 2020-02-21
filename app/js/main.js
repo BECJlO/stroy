@@ -1,5 +1,3 @@
-window.onscroll = function() { fixHeader() };
-
 $(document).ready(function() {
     //Smooth scrolling when clicking an anchor link
     var $root = $('html, body');
@@ -27,6 +25,9 @@ $(document).ready(function() {
         after_label: '',
         move_slider_on_hover: false,
         move_with_handle_only: false
+    });
+    $('.header__hamb').click(function() {
+        $('#header').toggleClass('open-menu')
     });
     $("#inputAreaSlider").slider({
         range: "min",
@@ -90,20 +91,20 @@ $(document).ready(function() {
     });
 
     if ($(window).width() > 768) {
+        window.onscroll = function() { fixHeader() };
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+        var firstScr = document.getElementById("first");
 
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
-var firstScr = document.getElementById("first");
-
-function fixHeader() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-        firstScr.classList.add("fixHeader");
-    } else {
-        header.classList.remove("sticky");
-        firstScr.classList.remove("fixHeader");
-    }
-}
+        function fixHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+                firstScr.classList.add("fixHeader");
+            } else {
+                header.classList.remove("sticky");
+                firstScr.classList.remove("fixHeader");
+            }
+        }
         var portfolio__slider = new Swiper('.portfolio__slider', {
             // Optional parameters
             direction: 'vertical',
