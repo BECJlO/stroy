@@ -1,15 +1,16 @@
 mixin footer()
   +b.FOOTER.footer
     +map()
-    +e.wrap
-      +e.NAV.nav
-        +e.UL
-          +e.LI
-            +e.A(href="#first") Головна
-          +e.LI
-            +e.A(href="#servise") Блог
-          +e.LI
-            +e.A(href="#portfolio") Дизайн-проекти
-          +e.LI
-            +e.A(href="#contacts") Контакти
-      +e.policy Политика конфиденфиальности
+    .global-container
+      +e.wrap
+        +e.NAV.nav
+          +e.UL
+            +e.LI
+              +e.A(href="#first") Головна
+            +e.LI
+              +e.A(href="#servise") Блог
+            +e.LI
+              +e.A(href="#portfolio") Дизайн-проекти
+            +e.LI
+              +e.A(href="#contacts") Контакти
+        +e.policy Политика конфиденфиальности

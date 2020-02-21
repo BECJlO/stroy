@@ -132,12 +132,15 @@
     margin-bottom: -135px
     position: relative
     display: grid
-    grid-template-columns: auto auto auto auto 
+    grid-template-columns: 1fr 800px 800px 1fr 
     grid-template-rows: auto auto auto auto
+    // grid-column-gap: 10px
     justify-content: flex-end
     justify-items: center
     align-items: center
-    @media #{$_lg}
+    @media (max-width: 1700px)
+      grid-template-columns: 20px 1fr 1fr 20px
+      grid-template-rows: auto auto auto auto
     @media #{$_md}
     @media #{$_sm}
       display: block

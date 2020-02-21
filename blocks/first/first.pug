@@ -1,59 +1,60 @@
 mixin first()
   .first-start(id='first')
-  +b.SECTION.first(id='first')
-    .dec-slider.swiper-container.wow.bounceInLeft(data-wow-duration="1.3s" data-wow-delay=".8s")
-      .dec-slider-wrapper.swiper-wrapper
-        .dec-slider-item.swiper-slide
-          IMG(src='images/back_slide1.jpg')
-        .dec-slider-item.swiper-slide
-          IMG(src='images/back_slide2.jpg')
-        .dec-slider-item.swiper-slide
-          IMG(src='images/back_slide3.jpg')
-    .mobile-ab
-      .mobile-ab-show
-        .mobile-ab-show-wrap
-          IMG(src="images/m-port_slide.jpg").mobile-ab-show-img.mobile-ab-show-after
-          IMG(src="images/m-port_slide-after.jpg").mobile-ab-show-img.mobile-ab-show-before
-    .container
-      +e.head
-        +e.dots.wow.fadeIn(data-wow-duration="1.3s" data-wow-delay="1s")
-          +e.dots-line
-            SPAN
-            SPAN.yellow.wow.bounceInUp(data-wow-duration="1.3s" data-wow-delay="1.1s")
-            SPAN
-            SPAN
-          +e.dots-line
-            SPAN
-            SPAN
-            SPAN
-            SPAN
-          +e.dots-line
-            SPAN
-            SPAN
-            SPAN
-            SPAN.green.wow.lightSpeedIn(data-wow-duration="1.5s" data-wow-delay="1.1s")
-        +e.head-text
-          +e.H1.title.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.2s")
-            +e.SPAN.title-fw Ремонт 
-            br
-            |в Житомирі та області<br> з гарантією 
-            +e.SPAN.title-num 3 
-            |роки
-          +e.H4.subtitle.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.3s")
-            |Виключно в строк від провідних спеціалістів по фіксованим цінам
-    +e.wrapper
-      +e.slider-wrapper.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.5s")
-        +e.slider.swiper-container
-          +e.slider-wrap.swiper-wrapper
-            +e.slider-item.swiper-slide
-              +e.IMG(src="images/slide1.jpg").slider-img
-            +e.slider-item.swiper-slide
-              +e.IMG(src="images/slide1.jpg").slider-img
-            +e.slider-item.swiper-slide
-              +e.IMG(src="images/slide1.jpg").slider-img
-        +e.slider-nav
-          +e.BUTTON.slider-prev.slider-nav
-          +e.BUTTON.slider-next.slider-nav
-      +calc()
-      +broadcast()
-      +mobileForm()
+  +b.SECTION.first
+    .global-container
+      .dec-slider.swiper-container.wow.bounceInLeft(data-wow-duration="1.3s" data-wow-delay=".8s")
+        .dec-slider-wrapper.swiper-wrapper
+          .dec-slider-item.swiper-slide
+            IMG(src='images/back_slide1.jpg')
+          .dec-slider-item.swiper-slide
+            IMG(src='images/back_slide2.jpg')
+          .dec-slider-item.swiper-slide
+            IMG(src='images/back_slide3.jpg')
+      .mobile-ab
+        .mobile-ab-show
+          .mobile-ab-show-wrap
+            IMG(src="images/m-port_slide.jpg").mobile-ab-show-img.mobile-ab-show-after
+            IMG(src="images/m-port_slide-after.jpg").mobile-ab-show-img.mobile-ab-show-before
+      .container
+        +e.head
+          +e.dots.wow.fadeIn(data-wow-duration="1.3s" data-wow-delay="1s")
+            +e.dots-line
+              SPAN
+              SPAN.yellow.wow.bounceInUp(data-wow-duration="1.3s" data-wow-delay="1.1s")
+              SPAN
+              SPAN
+            +e.dots-line
+              SPAN
+              SPAN
+              SPAN
+              SPAN
+            +e.dots-line
+              SPAN
+              SPAN
+              SPAN
+              SPAN.green.wow.lightSpeedIn(data-wow-duration="1.5s" data-wow-delay="1.1s")
+          +e.head-text
+            +e.H1.title.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.2s")
+              +e.SPAN.title-fw Ремонт 
+              br
+              |в Житомирі та області<br> з гарантією 
+              +e.SPAN.title-num 3 
+              |роки
+            +e.H4.subtitle.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.3s")
+              |Виключно в строк від провідних спеціалістів по фіксованим цінам
+      +e.wrapper
+        +e.slider-wrapper.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.5s")
+          +e.slider.swiper-container
+            +e.slider-wrap.swiper-wrapper
+              +e.slider-item.swiper-slide
+                +e.IMG(src="images/slide1.jpg").slider-img
+              +e.slider-item.swiper-slide
+                +e.IMG(src="images/slide1.jpg").slider-img
+              +e.slider-item.swiper-slide
+                +e.IMG(src="images/slide1.jpg").slider-img
+          +e.slider-nav
+            +e.BUTTON.slider-prev.slider-nav
+            +e.BUTTON.slider-next.slider-nav
+        +calc()
+        +broadcast()
+        +mobileForm()

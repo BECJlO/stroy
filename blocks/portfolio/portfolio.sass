@@ -161,11 +161,14 @@
         z-index: 2
         position: relative
         background: white
-        margin: -50px 43px 44px
+        max-width: 643px
+        margin: -50px auto 44px
         border-radius: 10px
+        background: white
         box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
       @media #{$_xs}
     &-text
+      margin: 0 auto
       font-size: 18px
       font-weight: bold
       font-stretch: normal
@@ -177,6 +180,7 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        max-width: 409px
       @media #{$_xs}
       h5
         font-size: 24px
@@ -232,6 +236,7 @@
       &:after
         transform: rotate(135deg)
   &__more
+    display: none
     width: 457px
     height: 85px
     margin: 4px auto 0
@@ -249,4 +254,5 @@
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      display: block
     @media #{$_xs}
