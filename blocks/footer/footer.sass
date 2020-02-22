@@ -12,10 +12,11 @@
     border-top-right-radius: 10px
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       width: 100%
       margin-top: 0
       border-top-right-radius: 0
+    @media #{$_sm}
+      height: auto
     @media #{$_xs}
   &__nav
     padding-top: 41px
@@ -30,6 +31,8 @@
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        flex-direction: column
+        align-items: center
       @media #{$_xs}
       li
         margin: 0 20px
@@ -50,6 +53,7 @@
           @media #{$_lg}
           @media #{$_md}
           @media #{$_sm}
+            text-align: center
           @media #{$_xs}
           &:hover
             color: white

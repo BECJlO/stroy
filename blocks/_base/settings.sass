@@ -27,27 +27,43 @@ button
   outline: none
 
 .second--block
+  margin-bottom: -180px
   background: #ffc600
   // padding: 100px
+  @media #{$_xxlg}
+  @media #{$_xlg}
+    margin-bottom: -150px
   @media #{$_lg}
   @media #{$_md}
-  @media #{$_sm}
     display: block
     background-color: #fff
+  @media #{$_sm}
   @media #{$_xs}
   .second--block__wrapper
+    position: relative
+    z-index: 2
     display: grid
     margin-bottom: -114px
-    grid-template-columns: auto 800px 800px auto 
+    grid-template-columns: 1fr minmax(600px, 800px) minmax(600px, 800px) 1fr 
     grid-template-rows: auto auto 50px
+    @media #{$_xxlg}
+      grid-template-columns: 80px minmax(600px, 800px) minmax(600px, 800px) 80px
+    @media #{$_xlg}
+      grid-template-columns: 80px minmax(400px, 800px) minmax(400px, 800px) 80px
     @media #{$_lg}
+      grid-template-columns: 50px minmax(400px, 800px) minmax(400px, 800px) 50px
+      grid-template-rows: minmax(250px, 300px) auto 50px
     @media #{$_md}
-    @media #{$_sm}
       display: block
       background: url(../images/bg__1s.jpg) center right
       background-repeat: no-repeat
-      background-position: 100% 20%
+      background-position: 100% center
+      background-size: 100%
+    @media #{$_sm}
     @media #{$_xs}
+
+
+
 
 
 .third--block
@@ -56,13 +72,23 @@ button
   grid-template-columns: auto 800px 800px auto 
   grid-template-rows: auto auto auto
   background: url(../images/bg__3s.jpg) center right
+  background-color: white
   background-repeat: no-repeat
+  @media #{$_xxlg}
+    grid-template-columns: 80px minmax(600px, 800px) minmax(600px, 800px) 80px
+  @media #{$_xlg}
+    grid-template-columns: 80px minmax(400px, 800px) minmax(400px, 800px) 80px
   @media #{$_lg}
+    grid-template-columns: 50px minmax(400px, 800px) minmax(400px, 800px) 50px
+    grid-template-rows: minmax(250px, 300px) auto 50px
+    background-position: 100% 20%
+    background-size: 100%
+    background-attachment: fixed
   @media #{$_md}
-  @media #{$_sm}
     display: block
     background: transparent
     background-repeat: no-repeat
+  @media #{$_sm}
   @media #{$_xs}
 
 .style--btn
@@ -165,6 +191,14 @@ body.fixed
   border-radius: 25px
   background-color: #00fce2
   transition: all .3s
+  @media #{$_xxlg}
+  @media #{$_xlg}
+    width: 72px
+    height: 72px
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
 
 .slider-nav:hover
   background-color: #ffc70a
@@ -177,12 +211,23 @@ body.fixed
   border-top: 4px solid black
   border-right: 4px solid black
   transform: rotate(-45deg)
+  @media #{$_xxlg}
+  @media #{$_xlg}
+    width: 15px
+    height: 15px
+    border-top-width: 3px
+    border-right-width: 3px
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
 
 
 .fixHeader
   padding-top: 128px
 
 .global-container
+  position: relative
   margin: 0 auto
   max-width: 1920px
   // @media (max-width: 1700px)

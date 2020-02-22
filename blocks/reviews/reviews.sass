@@ -5,16 +5,23 @@
   grid-column-end: 4
   grid-row-start: 2
   grid-row-end: 4
+  @media #{$_xxlg}
+  @media #{$_xlg}
   @media #{$_lg}
+    margin-top: 283px
   @media #{$_md}
-  @media #{$_sm}
+    overflow: hidden
     margin-top: 30px
     margin-bottom: 30px
-    padding-bottom: 300px
-    background: url(../images/mob-bottom.jpg)
-    background-position: center bottom
-    background-size: contain
+    padding: 0 44px
+    padding-bottom: 400px
+    background: url(../images/mob-topp.jpg)// ,url(../images/mob-bottom.jpg)
+    background-position: center 9%
+    background-size: 100%
     background-repeat: no-repeat
+  @media #{$_sm}
+    padding: 0 15px
+    padding-bottom: 220px
   @media #{$_xs}
   &__title
     display: none
@@ -27,20 +34,28 @@
     letter-spacing: 0.84px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       display: block
+      font-size: 35px
+    @media #{$_sm}
+      font-size: 32px
+      margin-bottom: 240px
     @media #{$_xs}
+      margin-bottom: 200px
   &__wrap
     position: relative
     max-width: 630px
     margin-left: auto
     margin-right: 30px
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       margin: 0 auto
+    @media #{$_sm}
     @media #{$_xs}
     &:before
       z-index: 1
@@ -52,18 +67,32 @@
       height: 59px
       content: ''
       background: url(../images/dec__circles.png)
+      background-repeat: no-repeat
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
+        top: 0
+        left: -33px
+        width: 60px
+        height: 45px
+        background-size: contain
       @media #{$_md}
-      @media #{$_sm}
         display: none
+      @media #{$_sm}
       @media #{$_xs}
+          bottom: -33px
+          left: -32px
+
   &__slider
     z-index: 1
     position: relative
     margin: -30px
     padding: 30px
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
+      // w100%
     @media #{$_sm}
     @media #{$_xs}
     &-nav
@@ -73,17 +102,27 @@
       width: calc(100% / 1 + 144px)
       margin-left: -72px
       margin-right: -72px
+      @media #{$_xxlg}
+        width: calc(100% / 1 + 120px)
+        margin-left: -60px
+        margin-right: -60px
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
+        left: 50%
         margin: 0 auto
-        width: 100%
+        width: 80%
+        transform: translateX(-50%)
+      @media #{$_sm}
+        top: 105%
       @media #{$_xs}
     &-prev
       position: absolute
       left: 0
       top: 50%
       transform: translateY(-50%)
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -96,6 +135,8 @@
       right: 0
       top: 50%
       transform: translateY(-50%)
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -110,8 +151,11 @@
     border-radius: 10px
     background: white
     box-shadow: 0px 9px 18px 0 rgba(0, 1, 2, 0.14)
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
+      padding: 30px 20px 40px
     @media #{$_sm}
     @media #{$_xs}
     h5
@@ -121,11 +165,18 @@
       line-height: 2
       letter-spacing: 0.48px
       text-align: center
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        font-size: 22px
       @media #{$_lg}
+        font-size: 20px
+        margin-bottom: 5px
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     p
+      max-width: 527px
+      margin: 0 auto
       font-size: 16px
       font-weight: 500
       font-stretch: normal
@@ -134,7 +185,11 @@
       letter-spacing: 0.32px
       text-align: center
       color: #000000
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
+        font-size: 15px
+        line-height: 1.5
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
@@ -145,11 +200,16 @@
       margin: 37px auto 17px
       background: grey // test
       border-radius: 60px
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
+        margin: 25px auto 17px
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
       &-wrap
+        @media #{$_xxlg}
+        @media #{$_xlg}
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
@@ -165,6 +225,8 @@
       letter-spacing: 0.24px
       text-align: center
       color: #161616
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -173,9 +235,12 @@
       display: flex
       justify-content: center
       margin: 38px auto 0
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
+        margin-top: 20px
       @media #{$_xs}
       a
         display: flex
@@ -188,6 +253,8 @@
         border-radius: 14px
         // background-color: #ffba00
         transition: all .3s
+        @media #{$_xxlg}
+        @media #{$_xlg}
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
@@ -195,6 +262,8 @@
         &:hover
           background-color: #ffba00
         svg
+          @media #{$_xxlg}
+          @media #{$_xlg}
           @media #{$_lg}
           @media #{$_md}
           @media #{$_sm}

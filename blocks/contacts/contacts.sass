@@ -4,8 +4,20 @@
   grid-row-start: 2
   grid-row-end: 3
   margin-top: 95px
+  @media #{$_xxlg}
+    margin-top: 80px
+    padding-right: 60px
+  @media #{$_xlg}
+    margin-top: 200px
   @media #{$_lg}
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    grid-row-start: 2
+    grid-row-end: 4
   @media #{$_md}
+    margin-top: 40px
+    padding-right: 0
   @media #{$_sm}
   @media #{$_xs}
   &__title
@@ -19,29 +31,54 @@
     letter-spacing: 0.84px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       display: block
+    @media #{$_sm}
+      font-size: 38px
     @media #{$_xs}
+      margin-bottom: 45px
+      padding: 0 20px
+      font-size: 32px
   &__item
+    display: block
     margin: 0 auto
     margin-bottom: 41px
     text-align: center
+    @media #{$_xxlg}
+      margin-bottom: 25px
+    @media #{$_xlg}
+      margin-bottom: 10px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      margin-bottom: 8px
     &-icon
       position: relative
       display: inline-block
       margin-right: 40px
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
+        width: 40px
+        margin-right: 30px
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
+        width: 30px
+        margin-right: 10px
       & img
         margin-bottom: -25%
+        @media #{$_xxlg}
+        @media #{$_xlg}
+        @media #{$_lg}
+          width: 100%
+        @media #{$_md}
+        @media #{$_sm}
+        @media #{$_xs}
     &-text
       display: inline-block
       font-size: 30px
@@ -52,10 +89,15 @@
       letter-spacing: 2px
       text-align: center
       color: #000000
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        font-size: 28px
       @media #{$_lg}
+        font-size: 23px
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
+        font-size: 20px
   &__email
     margin-top: 50px
     margin-bottom: 18px
@@ -67,10 +109,18 @@
     letter-spacing: 2px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      // padding-bottom: 30px
+      font-size: 28px
     @media #{$_lg}
+      margin-top: 30px
+      margin-bottom: 8px
+      font-size: 22px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      font-size: 20px
   &__address
     font-size: 30px
     font-weight: bold
@@ -80,18 +130,29 @@
     letter-spacing: 2px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      font-size: 28px
     @media #{$_lg}
+      max-width: 80%
+      margin: 0 auto
+      font-size: 22px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      font-size: 20px
   &__sv
     display: flex
     justify-content: center
     margin: 55px auto 42px
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
+      margin: 30px auto 40px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      margin-top: 45px
     a
       display: flex
       justify-content: center
@@ -103,6 +164,8 @@
       border-radius: 14px
       // background-color: #ffba00
       transition: all .3s
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -110,6 +173,8 @@
       &:hover
         background-color: #ffba00
       svg
+        @media #{$_xxlg}
+        @media #{$_xlg}
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}

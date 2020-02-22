@@ -8,12 +8,17 @@
   margin-top: -262px
   // margin-left: -78px
   // margin-right: 121px
+  @media #{$_xxlg}
+    margin-top: -302px
+  @media #{$_xlg}
   @media #{$_lg}
   @media #{$_md}
-  @media #{$_sm}
     margin: 0
     padding: 0 44px
+  @media #{$_sm}
+    padding: 0 20px
   @media #{$_xs}
+    padding: 0 15px
   &:after
     z-index: 1
     position: absolute
@@ -24,27 +29,45 @@
     height: 59px
     content: ''
     background: url(../images/dec__circles.png)
+    background-size: contain
+    background-repeat: no-repeat
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
-    @media #{$_md}
-    @media #{$_sm}
       display: none
+      width: 60px
+      transform: rotate(90deg)
+    @media #{$_md}
+      display: none
+    @media #{$_sm}
     @media #{$_xs}
   &__wrap
     z-index: 2
     position: relative
+    width: 634 / 8 * 1%
     max-width: 634px// ad
-    max-height: 935px// ad
+    // max-height: 935px// ad
     margin-left: 30px
     padding: 44px 34px 64px
     border-radius: 10px
     box-shadow: 0px 21px 21px 0 rgba(0, 1, 2, 0.14)
     background-color: #ffffff
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      width: 85%
+      margin-left: 0
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
+      max-width: 80%
       margin: 0 auto
+    @media #{$_sm}
+      width: auto
+      max-width: 100%
     @media #{$_xs}
+      padding: 30px 15px 43px
   &__form
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -60,12 +83,19 @@
     letter-spacing: 0.6px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      font-size: 25px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
+      font-size: 22px
     @media #{$_xs}
+      // font-size: 20px
   &__input-block
     width: 100%
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -80,6 +110,18 @@
       line-height: 2
       letter-spacing: 0.36px
       color: #000000
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin-top: 18px
+        margin-left: 27px
+        font-size: 17px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+        margin-top: 11px
+        margin-left: 20px
+        font-size: 15px
     & .ui-selectmenu-button
       width: 100%
       height: 76px
@@ -91,11 +133,31 @@
       box-shadow: 0px 5px 12px 0 rgba(0, 1, 2, 0.14)
       background-color: #ffffff
       transition: all .3s
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        height: 64px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+        height: 50px
       &:hover
         box-shadow: 0px 2px 5px 0 rgba(0, 1, 2, 0.14)
+        @media #{$_xxlg}
+        @media #{$_xlg}
+        @media #{$_lg}
+        @media #{$_md}
+        @media #{$_sm}
+        @media #{$_xs}
     & .ui-selectmenu-button-open
       border-bottom-left-radius: 0
       border-bottom-right-radius: 0
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     & .ui-selectmenu-icon
       width: 20px 
       height: 22px
@@ -104,12 +166,33 @@
       background: url(../images/select-arr.png)
       background-size: cover
       background-repeat: no-repeat
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin-top: 26px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+        margin-top: 17px
+        margin-right: 17px
     & .ui-button:hover .ui-icon
       background: url(../images/select-arr.png)
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     & .ui-button:active .ui-icon, & .ui-button:focus .ui-icon
       margin-top: 25px
       background: url(../images/select-arr.png)
       transform: rotate(180deg)
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     & .ui-state-default, .ui-widget-content .ui-state-default
       top: -20px
       width: 40px
@@ -119,23 +202,66 @@
       border: solid 3px #ffffff
       background-color: #00fce2
       outline: none
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        width: 18px
+        height: 36px
+        // border-width: 
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     & .ui-state-default:hover, .ui-widget-content .ui-state-default:hover
       box-shadow: 0px 3px 5px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     & .ui-slider .ui-slider-range
       background-color: #00fce2
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
   &__slider-area
     display: flex
     margin: 14px auto 50px
     flex-wrap: wrap
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-top: 0
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+      margin-bottom: 20px
   &__slider-area-col
     display: flex
     margin-top: 12px
     align-items: center
     width: calc(100% / 1 - 150px )
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      width: calc(100% / 1 - 105px )
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
   &__slider-text-col
     display: flex
     margin-top: 10px
     width: 150px
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      width: 105px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
   &__input-label
     display: block
     width: 100%
@@ -149,10 +275,18 @@
     letter-spacing: 0.36px
     text-align: center
     color: #ffc600
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-top: 30px
+      margin-bottom: 15px
+      font-size: 16px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      margin-top: 25px
+      margin-bottom: 10px
+      font-size: 14px
   &__input-input
     font-size: 18px
     font-weight: bold
@@ -162,6 +296,8 @@
     letter-spacing: 0.36px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -175,11 +311,21 @@
     letter-spacing: 0.48px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-top: 2px
+      font-size: 18px
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
+      margin-top: 5px
+      font-size: 14px
   &__bnt
     display: block
     width: 410px
     height: 75px
-    margin: 66px auto
+    margin: 66px auto 0
     box-shadow: 0px 9px 13px 0 rgba(0, 1, 2, 0.14)
     border: solid 3px #ffffff
     border-radius: 10px
@@ -192,17 +338,38 @@
     text-align: center
     color: #161616
     transition: all .3s
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      width: 100%
+      height: 68px
+      margin-top: 50px
+      font-size: 19px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+      height: 63px
+      margin-top: 30px
+      font-size: 18px
     &:hover
       box-shadow: 0px 2px 4px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
   &__input-area-slider.ui-widget.ui-widget-content
     width: calc(100% / 1 - 15px)
     margin-left: 15px
     height: 1px
     background: #00fce2
+    @media #{$_xxlg}
+    @media #{$_xlg}
+    @media #{$_lg}
+    @media #{$_md}
+    @media #{$_sm}
+    @media #{$_xs}
     // border: 0
     // border-top: 1px solid #00fce2
 #areaInput
@@ -218,4 +385,14 @@
   letter-spacing: 0.48px
   text-align: right
   color: #000000
+  @media #{$_xxlg}
+  @media #{$_xlg}
+    width: 45px
+    font-size: 20px
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+  @media #{$_xs}
+    width: 35px
+    font-size: 18px
 

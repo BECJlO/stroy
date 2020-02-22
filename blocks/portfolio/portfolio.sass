@@ -3,6 +3,10 @@
   grid-column-end: 3
   grid-row-start: 1
   grid-row-end: 2
+  width: 100%
+  height: 100%
+  @media #{$_xxlg}
+  @media #{$_xlg}
   @media #{$_lg}
   @media #{$_md}
   @media #{$_sm}
@@ -12,13 +16,16 @@
     // width: 100%
     justify-content: space-between
     flex-wrap: wrap
+    width: calc(100% /1 + 88px)
     height: 100%
     margin-right: -88px
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       max-width: 100%
       flex-direction: column
+    @media #{$_sm}
     @media #{$_xs}
   &__title
     width: 100%
@@ -31,13 +38,18 @@
     letter-spacing: 0.96px
     text-align: left
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-bottom: 30px
+      font-size: 35px
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
-      margin-bottom: 53px
-      font-size: 42px
+      // margin-bottom: 16px
+      font-size: 32px
       text-align: center
+    @media #{$_sm}
     @media #{$_xs}
+      font-size: 30px
   &__slider
     z-index: 2
     position: relative
@@ -45,21 +57,27 @@
     width: calc(100% / 1 + 60px)
     max-height: 702px
     padding: 30px
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      max-height: 590px
     @media #{$_lg}
+      max-height: 560px
     @media #{$_md}
-    @media #{$_sm}
       width: 100%
       max-height: none
       margin: 0
       padding: 0
+    @media #{$_sm}
     @media #{$_xs}
     &-overlay
       position: relative
       width: 84%//84.546%
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         width: 100%
+      @media #{$_sm}
       @media #{$_xs}
       &:before
         z-index: 1
@@ -71,10 +89,20 @@
         height: 59px
         content: ''
         background: url(../images/dec__circles.png)
+        background-repeat: no-repeat
+        @media #{$_xxlg}
+          right: -43px
+        @media #{$_xlg}
+          top: -19px
         @media #{$_lg}
+          top: -30px
+          right: -32px
+          width: 60px
+          height: 45px
+          background-size: contain
         @media #{$_md}
-        @media #{$_sm}
           display: none
+        @media #{$_sm}
         @media #{$_xs}
       &:after
         z-index: 1
@@ -86,10 +114,20 @@
         height: 59px
         content: ''
         background: url(../images/dec__circles.png)
+        background-repeat: no-repeat
+        @media #{$_xxlg}
+          left: -43px
+        @media #{$_xlg}
+          bottom: -19px
         @media #{$_lg}
+          bottom: -33px
+          left: -32px
+          width: 60px
+          height: 45px
+          background-size: contain
         @media #{$_md}
-        @media #{$_sm}
           display: none
+        @media #{$_sm}
         @media #{$_xs}
     &-item
       z-index: 2
@@ -99,21 +137,28 @@
       border-radius: 10px
       background: white
       box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         max-width: 100%
         width: 100%
         border-radius: 0
         box-shadow: none
+      @media #{$_sm}
+        display: flex
+        flex-direction: column
+        align-items: center
       @media #{$_xs}
     &-wrap
       // max-width: 744px
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
+        flex-direction: column
       @media #{$_sm}
         // display: block
-        flex-direction: column
       @media #{$_xs}
       // &:before
       //   z-index: 1
@@ -144,20 +189,24 @@
       //   @media #{$_sm}
       //   @media #{$_xs}
     &-show
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         width: 100%
         box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_sm}
       @media #{$_xs}
       &-wrap
         img
           width: 100%
     &-info
       padding: 37px 51px 53px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        padding: 20px 30px
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         z-index: 2
         position: relative
         background: white
@@ -166,6 +215,8 @@
         border-radius: 10px
         background: white
         box-shadow: 0px 5px 6px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_sm}
+        margin: -20px 15px 30px
       @media #{$_xs}
     &-text
       margin: 0 auto
@@ -177,20 +228,38 @@
       letter-spacing: 0.36px
       text-align: center
       color: #000000
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        font-size: 16px
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         max-width: 409px
+      @media #{$_sm}
+        font-size: 14px
+        font-weight: normal
       @media #{$_xs}
       h5
         font-size: 24px
         line-height: 1.5
         letter-spacing: 0.48px
+        @media #{$_xxlg}
+        @media #{$_xlg}
+          margin-bottom: 10px
+          font-size: 22px
+          line-height: 1.3
         @media #{$_lg}
+          font-size: 20px
         @media #{$_md}
         @media #{$_sm}
+          max-width: 320px
+          margin: 0 auto
+          margin-bottom: 10px
+          font-size: 18px
+          font-weight: bold
         @media #{$_xs}
       p
+        @media #{$_xxlg}
+        @media #{$_xlg}
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
@@ -207,6 +276,9 @@
       letter-spacing: 0.28px
       text-align: center
       color: #161616
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin-top: 25px
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -216,19 +288,25 @@
       display: flex
       flex-direction: column
       justify-content: center
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
-      @media #{$_sm}
         display: none
+      @media #{$_sm}
       @media #{$_xs}
     &-prev
       margin: 40px auto
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-next
       margin: 40px auto
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -251,8 +329,14 @@
     letter-spacing: 0.9px
     text-align: center
     color: #161616
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       display: block
+    @media #{$_sm}
+      max-width: 100%
+      width: 90%
+      height: 70px
+      font-size: 19px
     @media #{$_xs}

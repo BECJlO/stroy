@@ -3,30 +3,44 @@
   background-repeat: no-repeat
   background-position: 100% 20%
   // background: grey //remo
+  @media #{$_xxlg}
+  @media #{$_xlg}
   @media #{$_lg}
+    background-position: 120% 20%
   @media #{$_md}
-  @media #{$_sm}
     background: url(../images/bg_mobile.jpg)
     background-size: cover
+  @media #{$_sm}
   @media #{$_xs}
   .container
     z-index: 2
     position: relative
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       position: absolute
       top: 0
+    @media #{$_sm}
     @media #{$_xs}
   &__head
     width: 100%
     display: flex
     justify-content: flex-end
     margin-top: 118px
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-top: 90px
+      padding-right: 40px
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       justify-content: center
+      margin: 0 auto
+      padding: 0
+      margin-top: 25%
+      // margin-top: 100px
+    @media #{$_sm}
+      margin-top: 100px
     @media #{$_xs}
   &__dots
     display: flex
@@ -34,10 +48,16 @@
     height: 189px
     flex-direction: column
     justify-content: space-between
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      width: 220px
+      height: 165px
     @media #{$_lg}
+      width: 170px
+      height: 127px
     @media #{$_md}
-    @media #{$_sm}
       display: none
+    @media #{$_sm}
     @media #{$_xs}
     &-line
       display: flex
@@ -50,7 +70,13 @@
       height: 38px
       border-radius: 19px
       background-color: white
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        width: 34px
+        height: 34px
       @media #{$_lg}
+        width: 28px
+        height: 28px
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
@@ -62,16 +88,20 @@
         @media #{$_xs}
       &.green
         background-color: #00fce2
+        @media #{$_xxlg}
+        @media #{$_xlg}
         @media #{$_lg}
         @media #{$_md}
         @media #{$_sm}
         @media #{$_xs}
   &__head-text
     margin-left: 38px
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       margin: 0
+    @media #{$_sm}
     @media #{$_xs}
   &__title
     margin: 0
@@ -85,11 +115,17 @@
     letter-spacing: 0.96px
     text-align: left
     color: #0e0e0e
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      margin-top: 0
+      font-size: 44px
     @media #{$_lg}
+      font-size: 40px
     @media #{$_md}
-    @media #{$_sm}
       color: white
       text-align: center
+    @media #{$_sm}
+      font-size: 24px
     @media #{$_xs}
     &-fw
       display: inline-block
@@ -97,17 +133,30 @@
       margin-bottom: 21px
       font-size: 60px
       letter-spacing: 1.2px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin-top: 0
+        margin-bottom: 12px
+        font-size: 55px
       @media #{$_lg}
+        font-size: 50px
+        margin-bottom: 7px
       @media #{$_md}
-      @media #{$_sm}
         text-transform: uppercase
+      @media #{$_sm}
+        font-size: 30px
       @media #{$_xs}
     &-num
       font-size: 72px
       letter-spacing: 1.44px
       color: #ffc70a
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        font-size: 61px
       @media #{$_lg}
+        font-size: 50px
       @media #{$_md}
+        font-size: 35px
       @media #{$_sm}
       @media #{$_xs}
   &__subtitle
@@ -121,10 +170,13 @@
     letter-spacing: 0.36px
     text-align: left
     color: #0e0e0e
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      max-width: 400px
     @media #{$_lg}
     @media #{$_md}
-    @media #{$_sm}
       display: none
+    @media #{$_sm}
     @media #{$_xs}
   &__wrapper
     width: 100%
@@ -132,61 +184,105 @@
     margin-bottom: -135px
     position: relative
     display: grid
-    grid-template-columns: 1fr 800px 800px 1fr 
+    grid-template-columns: 1fr minmax(600px, 800px) minmax(600px, 800px) 1fr 
     grid-template-rows: auto auto auto auto
     // grid-column-gap: 10px
     justify-content: flex-end
     justify-items: center
     align-items: center
-    @media (max-width: 1700px)
-      grid-template-columns: 20px 1fr 1fr 20px
+    @media #{$_xxlg}
+      margin-bottom: -120px
+      grid-template-columns: 80px minmax(600px, 800px) minmax(600px, 800px) 80px
       grid-template-rows: auto auto auto auto
+    @media #{$_xlg}
+      margin-top: 50px
+      margin-bottom: -100px
+      grid-template-columns: 80px minmax(400px, 800px) minmax(400px, 800px) 80px
+      grid-template-rows: auto auto auto auto
+    @media #{$_lg}
+      grid-template-columns: 50px minmax(400px, 800px) minmax(400px, 800px) 50px
     @media #{$_md}
-    @media #{$_sm}
       display: block
       margin-top: -45px
       margin-bottom: 0
+    @media #{$_sm}
+    @media #{$_xs}
+      margin-top: -25px
+  &__slider-wrapper
+    grid-column-start: 3
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 3
+    display: flex
+    justify-content: space-between
+    // align-items: center
+    width: 100%
+    height: 100%
+    @media #{$_xxlg}
+    @media #{$_xlg}
+    @media #{$_lg}
+    @media #{$_md}
+      display: none
+    @media #{$_sm}
     @media #{$_xs}
   &__slider
-    max-width: 685px
-    max-height: 858px
+    // max-width: 685px
+    width: calc(77.125% + 70px)
+    max-height: 782px
     padding: 35px
     padding-bottom: 45px
     margin-top: -10px
-    margin-left: -20px
+    margin-left: -35px
     align-items: center
     justify-content: space-between
+    @media #{$_xxlg}
+      max-height: 760px
+    @media #{$_xlg}
+      max-height: 720px
     @media #{$_lg}
+      max-height: 690px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
-    &-wrapper
-      grid-column-start: 3
-      grid-column-end: 4
-      grid-row-start: 1
-      grid-row-end: 3
-      display: flex
-      justify-content: space-between
-      // align-items: center
-      width: 100%
-      height: 100%
-      @media #{$_lg}
-      @media #{$_md}
-      @media #{$_sm}
-        display: none
-      @media #{$_xs}
     &-wrap
+      width: 100%
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-item
+      width: 100%
       box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
-    &-img
+    &-img-wrap
+      overflow: hidden
+      position: relative
+      width: 100%
+      min-height: 100%
+      padding-top: 126%
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
+    & img
+      position: absolute
+      top: 50%
+      left: 50%
+      display: block
+      min-width: 100%
+      max-height: 100%
+      transform: translate(-50%, -50%)
+      @media #{$_xxlg}
+      @media #{$_xlg}
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -197,18 +293,28 @@
       flex-direction: column
       margin-top: 15px
       margin-right: 14px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin-top: 0
+        margin-right: 0
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-prev
       margin: 40px auto
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin: 30px auto
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
       @media #{$_xs}
     &-next
       margin: 40px auto
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        margin: 30px auto
       @media #{$_lg}
       @media #{$_md}
       @media #{$_sm}
@@ -224,10 +330,13 @@
   padding: 0 30px 30px 0
   z-index: 0 // -1
   position: absolute
+  @media #{$_xxlg}
+  @media #{$_xlg}
   @media #{$_lg}
+    width: 70%
   @media #{$_md}
-  @media #{$_sm}
     display: none
+  @media #{$_sm}
   @media #{$_xs}
 
 .dec-slider-wrapper
@@ -245,11 +354,13 @@
   position: relative
   display: none
   width: 100%
+  @media #{$_xxlg}
+  @media #{$_xlg}
   @media #{$_lg}
   @media #{$_md}
-  @media #{$_sm}
     display: block
-  @media #{$_xs}
+  @media #{$_sm}
+
   &-show
     width: 100%
     &-show-wrap
@@ -258,3 +369,5 @@
       width: 100%
   & .twentytwenty-handle
     margin-top: 130px
+    @media #{$_xs}
+      margin-top: 80px

@@ -4,36 +4,55 @@
   grid-row-start: 2
   grid-row-end: 4
   margin-left: 95px
+  @media #{$_xxlg}
+  @media #{$_xlg}
+    margin-left: 0
   @media #{$_lg}
   @media #{$_md}
-  @media #{$_sm}
     display: none
     margin: 0 auto
+  @media #{$_sm}
   @media #{$_xs}
   &__wrap
     overflow: hidden
     position: relative
+    width: 100%
     max-width: 634px
-    margin: -169px auto
+    margin: -169px auto 0
     // margin-left: 130px
     border-radius: 10px
     box-shadow: 0px 4px 21px 0 rgba(0, 1, 2, 0.14)
     background-color: #ffffff
+    @media #{$_xxlg}
+      // margin-top: -100px
+    @media #{$_xlg}
+      margin-top: -140px
     @media #{$_lg}
+      max-width: 400px
+      margin-top: -150px
     @media #{$_md}
-    @media #{$_sm}
       margin: 0 auto
+    @media #{$_sm}
     @media #{$_xs}
   &__img
+    overflow: hidden
     width: 634px
     height: 171px
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      height: 130px
     @media #{$_lg}
+      height: 100px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
   &__content
     padding: 43px 58px 97px
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      padding: 30px 45px 80px
     @media #{$_lg}
+      padding: 35px 40px 80px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
@@ -47,7 +66,12 @@
     letter-spacing: 0.72px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
+      font-size: 30px
     @media #{$_lg}
+      font-size: 25px
+      line-height: 1.1
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
@@ -62,7 +86,10 @@
     letter-spacing: 0.36px
     text-align: center
     color: #000000
+    @media #{$_xxlg}
+    @media #{$_xlg}
     @media #{$_lg}
+      margin: 20px auto 40px
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
@@ -70,6 +97,11 @@
     display: block
     width: 410px
     height: 75px
+    @media #{$_xxlg}
+      width: 100%
+    @media #{$_xlg}
+      height: 68px
+      font-size: 19px
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
@@ -81,3 +113,5 @@
     bottom: 29px
     left: 50%
     transform: translatex(-50%)
+    @media #{$_xlg}
+      bottom: 19px
