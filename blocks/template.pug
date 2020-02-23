@@ -14,6 +14,9 @@ include contacts/contacts
 include reviews/reviews
 include map/map
 
+include binner/binner
+include blog/blog
+
 include mobileForm/mobileForm
 include mobileForm2/mobileForm2
 
@@ -38,29 +41,36 @@ html(lang="ru")
 
 			block content
 
-			block first
-				+first()
+
+			block blog
+				+blog()
+
+			//- block binner
+			//- 	+binner()
+
+			//- block first
+			//- 	+first()
 
 
-			.second--block
-				.second--block__wrapper
+			//- .second--block
+			//- 	.second--block__wrapper
 
-					block servise
-						+servise()
+			//- 		block servise
+			//- 			+servise()
 
-					block discount
-						+discount()
+			//- 		block discount
+			//- 			+discount()
 			
-			.third--block
+			//- .third--block
 
-				block portfolio
-					+portfolio()
+			//- 	block portfolio
+			//- 		+portfolio()
 
-				block reviews
-					+reviews()
+			//- 	block reviews
+			//- 		+reviews()
 
-				block contacts
-					+contacts()
+			//- 	block contacts
+			//- 		+contacts()
 
 			block footer
 				+footer()

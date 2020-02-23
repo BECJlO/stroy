@@ -89,6 +89,30 @@ $(document).ready(function() {
         }
 
     });
+    var binnerSimmilarSlider = new Swiper('.binner__similar-slider', {
+        // Optional parameters
+        // direction: 'vertical',
+        // loop: true,
+        speed: 800,
+        slidesPerView: 1,
+        spaceBetween: 95,
+        // effect: 'cube',
+
+        breakpoints: {
+            1200: {
+              slidesPerView: 2,
+              spaceBetween: 95
+            }
+        },
+
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.binner__similar-next',
+            prevEl: '.binner__similar-prev',
+        }
+
+    });
 
     if ($(window).width() > 768) {
         window.onscroll = function() { fixHeader() };
