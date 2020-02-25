@@ -908,6 +908,22 @@ a.ui-button:active,
   transform: none;
 }
 
+.open-menu .header__hamb-line:nth-child(2) {
+  opacity: 0;
+}
+
+.open-menu .header__hamb-line:first-child {
+  top: 9px;
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.open-menu .header__hamb-line:last-child {
+  bottom: 9px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .header__sv {
   position: absolute;
   bottom: 30px;
@@ -2623,6 +2639,12 @@ a.ui-button:active,
 .mobileForm__input-block {
   position: relative;
   margin-bottom: 34px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #000000;
 }
 
 .mobileForm__input-label {
@@ -2651,6 +2673,12 @@ a.ui-button:active,
   background-color: #ffffff;
   text-align: center;
   transition: all .3s;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #000000;
 }
 
 .mobileForm__input-input:hover {
@@ -2739,6 +2767,12 @@ a.ui-button:active,
   background-color: #ffffff;
   text-align: center;
   transition: all .3s;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #000000;
 }
 
 .mobileForm2__input-input:hover {
@@ -4322,6 +4356,11 @@ a.ui-button:active,
     max-width: 100%;
   }
 
+  .twentytwenty-handle {
+    -ms-transform: scale(0.65);
+    transform: scale(0.65);
+  }
+
   .inner-container {
     max-width: 100%;
     padding: 0 20px;
@@ -4621,7 +4660,15 @@ a.ui-button:active,
     font-size: 17px;
   }
 
+  .mobileForm__input-block {
+    font-size: 17px;
+  }
+
   .mobileForm__input-label {
+    font-size: 17px;
+  }
+
+  .mobileForm__input-input {
     font-size: 17px;
   }
 
@@ -4651,6 +4698,10 @@ a.ui-button:active,
   }
 
   .mobileForm2__input-label {
+    font-size: 17px;
+  }
+
+  .mobileForm2__input-input {
     font-size: 17px;
   }
 
@@ -4858,9 +4909,14 @@ a.ui-button:active,
 
   .mobileForm__input-block {
     margin-bottom: 30px;
+    font-size: 15px;
   }
 
   .mobileForm__input-label {
+    font-size: 15px;
+  }
+
+  .mobileForm__input-input {
     font-size: 15px;
   }
 
@@ -4899,6 +4955,10 @@ a.ui-button:active,
   }
 
   .mobileForm2__input-label {
+    font-size: 15px;
+  }
+
+  .mobileForm2__input-input {
     font-size: 15px;
   }
 

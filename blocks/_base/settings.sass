@@ -125,10 +125,18 @@ button
   border: solid 3px #ffffff
   background-color: #00fce2
   outline: none
+  @media #{$_lg}
+  @media #{$_md}
+  @media #{$_sm}
+    transform: scale(.65)
+  @media #{$_xs}
 .twentytwenty-left-arrow
   border-right-color: black
 .twentytwenty-right-arrow
   border-left-color: black
+
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
+
 
 
 .ui-widget.ui-widget-content

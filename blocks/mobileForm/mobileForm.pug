@@ -4,12 +4,12 @@ mixin mobileForm()
       +e.FORM.form
         +e.H3.title Вікна чи натяжні стелі? Виберіть свій подарунок до Нового Року!
         +e.P.subtitle Заповніть форму, дізнайтеся подробиці акції та отримайте свій подарунок до 31 грудня
-        +e.input-block
-          +e.LABEL.input-label Ім’я
-          +e.INPUT.input-input
-        +e.input-block
-          +e.LABEL.input-label Телефон
-          +e.INPUT.input-input
+        +e.input-block.hiden-label
+          //- +e.LABEL.input-label Ім’я
+          +e.INPUT.input-input(placeholder="Ім’я")
+        +e.input-block.hiden-label
+          //- +e.LABEL.input-label Телефон
+          +e.INPUT.input-input(placeholder="Телефон")
         +e.BUTTON.btn.style--btn Отримати подарунок
         +e.decelem
           <svg xmlns="http://www.w3.org/2000/svg" width="46.677" height="33.335">
