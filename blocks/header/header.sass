@@ -15,7 +15,7 @@
   @media #{$_lg}
     // height: 100px
   @media #{$_md}
-    position: absolute
+    position: fixed
     width: calc( 100% / 1 - 36px)
     height: 88px
     padding: 0 16px
@@ -257,7 +257,6 @@
     letter-spacing: 0.42px
     white-space: nowrap
     text-align: center
-    color: #ffc600
     transition: all .3s
     @media #{$_xxlg}
       font-size: 19px
@@ -272,13 +271,30 @@
       display: none
     @media #{$_sm}
     @media #{$_xs}
-    &:hover
-      text-shadow: 0 2px 5px rgba(250,200,0,.5)
+    &-item
+      display: block
+      color: #ffc600
+      &:hover
+        text-shadow: 0 2px 5px rgba(250,200,0,.5)
   &__langswitch
+    display: flex
+    justify-content: flex-end
+    color: black
+    font-size: 16px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: 0.32px
+    text-align: center
     @media #{$_lg}
     @media #{$_md}
     @media #{$_sm}
     @media #{$_xs}
+    a
+      color: #161616
+      transition: all .2s
+      &:hover, &.active
+        color: #ffc70a
   &__hamb
     position: absolute
     left: 50%

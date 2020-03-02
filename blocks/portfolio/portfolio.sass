@@ -150,7 +150,12 @@
         flex-direction: column
         align-items: center
       @media #{$_xs}
+      // & .twentytwenty-wrapper.twentytwenty-horizontal
+      //   display: none
+      // & .twentytwenty-wrapper.twentytwenty-horizontal.activeTab
+      //   display: block
     &-wrap
+      // display: none
       // max-width: 744px
       @media #{$_xxlg}
       @media #{$_xlg}
@@ -189,6 +194,7 @@
       //   @media #{$_sm}
       //   @media #{$_xs}
     &-show
+      position: relative
       @media #{$_xxlg}
       @media #{$_xlg}
       @media #{$_lg}
@@ -198,8 +204,41 @@
       @media #{$_sm}
       @media #{$_xs}
       &-wrap
+        z-index: 1
+        position: relative
+        display: none
+        &.activeTab
+          display: block
         img
           width: 100%
+    &-slidetabso
+      z-index: 3
+      position: absolute
+
+    &-tabs
+      z-index: 2
+      position: absolute
+      display: flex
+      width: 30%
+      height: 100%
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      // &:hover
+      //   display: none
+      &.close
+        // display: none
+    &-tab
+      overflow: hidden
+      width: 86px
+      height: 86px
+      margin: 11px 0
+      border: solid 3px #ffffff
+      border-radius: 10px
+      cursor: pointer
+      img
+        width: 100%
+        min-height: 100%
     &-info
       padding: 37px 51px 53px
       @media #{$_xxlg}
