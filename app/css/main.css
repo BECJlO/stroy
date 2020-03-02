@@ -913,7 +913,7 @@ a.ui-button:active,
 }
 
 .open-menu .header__hamb-line:first-child {
-  top: 9px;
+  top: 10px;
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -4408,6 +4408,10 @@ a.ui-button:active,
 
   .header__hamb-line {
     height: 4px;
+  }
+
+  .open-menu .header__hamb-line:first-child {
+    top: 9px;
   }
 
   .first__head {
