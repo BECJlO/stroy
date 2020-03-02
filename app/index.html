@@ -49,7 +49,11 @@
             </li>
           </ul>
           <button class="header__get-call style style--btn wow bounceInDown" data-wow-duration="1s" data-wow-delay=".6s">Замовити дзвінок
-          </button><a class="header__phone wow bounceInDown" data-wow-duration="1s" data-wow-delay=".5s">+38 (098) 936 55 91</a>
+          </button>
+          <div class="header__phone wow bounceInDown" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="header__langswitch"><a href="#">Укр </a>/<a href="#">Рус</a>
+            </div><a class="header__phone-item">+38 (098) 936 55 91</a><a class="header__phone-item">+38 (098) 936 55 91</a>
+          </div>
           <div class="header__sv"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="7.125" height="14.19" viewBox="0 0 7.125 14.19">
 <path id="Forma_1_копия_11" data-name="Forma 1 копия 11" class="cls-1" d="M473.927,4031.18v-1.77a0.891,0.891,0,0,1,.889-0.89h0.889v-2.22h-1.778a2.663,2.663,0,0,0-2.667,2.66v2.22h-1.778v2.21h1.778v7.09h2.667v-7.09h1.778l0.889-2.21h-2.667Z" transform="translate(-469.469 -4026.31)"/>
 </svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="13.843" height="11.03" viewBox="0 0 13.843 11.03">
@@ -57,8 +61,6 @@
 </svg></a><a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
 <image id="L0001_копия" data-name="L0001 копия" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABBUlEQVQokZ3RzypGURQF8J/PZWZipIy8gVL+TDyAhGJqxsRTyAPIxMQMZaJQXsDI3IARkpIyQygRbZ1b1+n4+rJrD846e5291jowiD084g2vbfodX3jGbpDXE9BJP+AwLYmzgw6Jn5jDGFYCqxJYqiOcJOIk5tGDqt5aFUjhawk3mEULm+mxsHiKqXp4P5O3hpmkqIkvYDXDfpEjiAmcFzxfYRwvNdbKJMd3dGOgYCewmH+qgZzcl7CLAjnUxF1/E8w972AEtw3sDqPYas6W0l7EPaYxjC6cpcCW8+F8c93XScU2LkszsTkCKtVQ6j8rAghJ/6rYvIHe5DFU/Hx+m4oMPnD8DdKAcKsw5dlQAAAAAElFTkSuQmCC"/>
 </svg></a>
-          </div>
-          <div class="header__langswitch">
           </div>
         </nav>
       </div>
@@ -91,21 +93,21 @@
           <div class="first__head">
             <div class="first__dots wow fadeIn" data-wow-duration="1.3s" data-wow-delay="1s">
               <div class="first__dots-line">
-                <SPAN></SPAN>
-                <SPAN class="yellow wow bounceInUp" data-wow-duration="1.3s" data-wow-delay="1.1s"></SPAN>
-                <SPAN></SPAN>
-                <SPAN></SPAN>
+                <SPAN data-as="0"></SPAN>
+                <SPAN class="yellow wow bounceInUp" data-as="1" data-wow-duration="1.3s" data-wow-delay="1.1s"></SPAN>
+                <SPAN data-as="2"></SPAN>
+                <SPAN data-as="3"></SPAN>
               </div>
               <div class="first__dots-line">
-                <SPAN></SPAN>
-                <SPAN></SPAN>
-                <SPAN></SPAN>
-                <SPAN></SPAN>
+                <SPAN data-as="4"></SPAN>
+                <SPAN data-as="5"></SPAN>
+                <SPAN data-as="6"></SPAN>
+                <SPAN data-as="7"></SPAN>
               </div>
               <div class="first__dots-line">
-                <SPAN></SPAN>
-                <SPAN></SPAN>
-                <SPAN></SPAN>
+                <SPAN data-as="8"></SPAN>
+                <SPAN data-as="9"></SPAN>
+                <SPAN data-as="10"></SPAN>
                 <SPAN class="green wow lightSpeedIn" data-wow-duration="1.5s" data-wow-delay="1.1s"></SPAN>
               </div>
             </div>
@@ -202,7 +204,7 @@
             </div>
           </section>
           <div class="mobileForm">
-            <div class="mobileForm__wrapper">
+            <div class="mobileForm__wrapper"> 
               <form class="mobileForm__form">
                 <h3 class="mobileForm__title">Вікна чи натяжні стелі? Виберіть свій подарунок до Нового Року!
                 </h3>
@@ -324,7 +326,27 @@
               <div class="portfolio__slider-wrap swiper-wrapper">
                 <div class="portfolio__slider-item swiper-slide">
                   <div class="portfolio__slider-show">
-                    <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                    <div class="portfolio__slidetabso">
+                    </div>
+                    <div class="portfolio__slider-tabs">
+                      <div class="portfolio__slider-tab" data-active-slide="1"><img src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="2"><img src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="3"><img src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="1">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap activeTab" data-count="2">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before2.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="3">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before3.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
                     </div>
                   </div>
                   <div class="portfolio__slider-info">
@@ -340,7 +362,27 @@
                 </div>
                 <div class="portfolio__slider-item swiper-slide">
                   <div class="portfolio__slider-show">
-                    <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                    <div class="portfolio__slidetabso">
+                    </div>
+                    <div class="portfolio__slider-tabs">
+                      <div class="portfolio__slider-tab" data-active-slide="1"><img src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="2"><img src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="3"><img src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="1">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap activeTab" data-count="2">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before2.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="3">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before3.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
                     </div>
                   </div>
                   <div class="portfolio__slider-info">
@@ -356,7 +398,27 @@
                 </div>
                 <div class="portfolio__slider-item swiper-slide">
                   <div class="portfolio__slider-show">
-                    <div class="portfolio__slider-show-wrap"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                    <div class="portfolio__slidetabso">
+                    </div>
+                    <div class="portfolio__slider-tabs">
+                      <div class="portfolio__slider-tab" data-active-slide="1"><img src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="2"><img src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                      <div class="portfolio__slider-tab" data-active-slide="3"><img src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="1">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap activeTab" data-count="2">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before2.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide2.jpg" alt="" role="presentation"/>
+                      </div>
+                    </div>
+                    <div class="portfolio__slider-show-wrap" data-count="3">
+                      <div class="portfolio__slider-slider"><img class="portfolio__slider-show-img slider-show-before" src="images/port_slide-before3.jpg" alt="" role="presentation"/><img class="portfolio__slider-show-img slider-show-after" src="images/port_slide3.jpg" alt="" role="presentation"/>
+                      </div>
                     </div>
                   </div>
                   <div class="portfolio__slider-info">

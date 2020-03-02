@@ -18,7 +18,13 @@ mixin header()
           +e.LI.menu-item
             +e.A(href="#contacts").menu-link Контакти
         +e.BUTTON.get-call.style--btn.wow.bounceInDown(data-wow-duration="1s" data-wow-delay=".6s") Замовити дзвінок
-        +e.A.phone.wow.bounceInDown(data-wow-duration="1s" data-wow-delay=".5s") +38 (098) 936 55 91
+        +e.phone.wow.bounceInDown(data-wow-duration="1s" data-wow-delay=".5s")
+          +e.langswitch
+            a(href="#") Укр 
+            |/
+            a(href="#") Рус
+          +e.A().phone-item +38 (098) 936 55 91
+          +e.A().phone-item +38 (098) 936 55 91
         +e.sv
           +e.A(href='#')
             <svg xmlns="http://www.w3.org/2000/svg" width="7.125" height="14.19" viewBox="0 0 7.125 14.19">
@@ -32,6 +38,10 @@ mixin header()
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
               <image id="L0001_копия" data-name="L0001 копия" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABBUlEQVQokZ3RzypGURQF8J/PZWZipIy8gVL+TDyAhGJqxsRTyAPIxMQMZaJQXsDI3IARkpIyQygRbZ1b1+n4+rJrD846e5291jowiD084g2vbfodX3jGbpDXE9BJP+AwLYmzgw6Jn5jDGFYCqxJYqiOcJOIk5tGDqt5aFUjhawk3mEULm+mxsHiKqXp4P5O3hpmkqIkvYDXDfpEjiAmcFzxfYRwvNdbKJMd3dGOgYCewmH+qgZzcl7CLAjnUxF1/E8w972AEtw3sDqPYas6W0l7EPaYxjC6cpcCW8+F8c93XScU2LkszsTkCKtVQ6j8rAghJ/6rYvIHe5DFU/Hx+m4oMPnD8DdKAcKsw5dlQAAAAAElFTkSuQmCC"/>
             </svg>
-        +e.langswitch
+        
+          //- select
+          //-   option(value="ua" data-class="avatar" data-style="background-image: url(images/76.jpg;);")
+          //-   option(value="ru" data-class="avatar" data-style="background-image: url(images/76.jpg););")
+          //-   option(value="eng" data-class="avatar" data-style="background-image: url(images/76.jpg););")
 
 

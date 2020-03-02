@@ -19,19 +19,19 @@ mixin first()
         +e.head
           +e.dots.wow.fadeIn(data-wow-duration="1.3s" data-wow-delay="1s")
             +e.dots-line
-              SPAN
-              SPAN.yellow.wow.bounceInUp(data-wow-duration="1.3s" data-wow-delay="1.1s")
-              SPAN
-              SPAN
+              SPAN(data-as='0')
+              SPAN(data-as='1').yellow.wow.bounceInUp(data-wow-duration="1.3s" data-wow-delay="1.1s")
+              SPAN(data-as='2')
+              SPAN(data-as='3')
             +e.dots-line
-              SPAN
-              SPAN
-              SPAN
-              SPAN
+              SPAN(data-as='4')
+              SPAN(data-as='5')
+              SPAN(data-as='6')
+              SPAN(data-as='7')
             +e.dots-line
-              SPAN
-              SPAN
-              SPAN
+              SPAN(data-as='8')
+              SPAN(data-as='9')
+              SPAN(data-as='10')
               SPAN.green.wow.lightSpeedIn(data-wow-duration="1.5s" data-wow-delay="1.1s")
           +e.head-text
             +e.H1.title.wow.bounceInRight(data-wow-duration="1.3s" data-wow-delay="1.2s")

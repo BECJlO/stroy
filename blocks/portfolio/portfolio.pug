@@ -7,9 +7,28 @@ mixin portfolio()
           +e.slider-wrap.swiper-wrapper
             +e.slider-item.swiper-slide
               +e.slider-show
-                +e.slider-show-wrap
-                  +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
-                  +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slidetabso
+                +e.slider-tabs
+                  +e.slider-tab(data-active-slide='1')
+                    +e.IMG(src="images/port_slide.jpg")
+                  +e.slider-tab(data-active-slide='2')
+                    +e.IMG(src="images/port_slide2.jpg")
+                  +e.slider-tab(data-active-slide='3')
+                    +e.IMG(src="images/port_slide3.jpg")
+
+                +e.slider-show-wrap(data-count="1")
+                    +e.slider-slider
+                      +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
+                      +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="2").activeTab
+                    +e.slider-slider
+                      +e.IMG(src="images/port_slide-before2.jpg").slider-show-img.slider-show-before
+                      +e.IMG(src="images/port_slide2.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="3")
+                    +e.slider-slider
+                      +e.IMG(src="images/port_slide-before3.jpg").slider-show-img.slider-show-before
+                      +e.IMG(src="images/port_slide3.jpg").slider-show-img.slider-show-after
+
               +e.slider-info
                 +e.slider-text
                   +e.H5 м. Житомир, вул. Велика Бердичівська, 48
@@ -17,9 +36,28 @@ mixin portfolio()
                 +e.BUTTON.slider-btn.style--btn Хочу такий ремонт
             +e.slider-item.swiper-slide
               +e.slider-show
-                +e.slider-show-wrap
-                  +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
-                  +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slidetabso
+                +e.slider-tabs
+                  +e.slider-tab(data-active-slide='1')
+                    +e.IMG(src="images/port_slide.jpg")
+                  +e.slider-tab(data-active-slide='2')
+                    +e.IMG(src="images/port_slide2.jpg")
+                  +e.slider-tab(data-active-slide='3')
+                    +e.IMG(src="images/port_slide3.jpg")
+
+                +e.slider-show-wrap(data-count="1")
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="2").activeTab
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before2.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide2.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="3")
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before3.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide3.jpg").slider-show-img.slider-show-after
+
               +e.slider-info
                 +e.slider-text
                   +e.H5 м. Житомир, вул. Велика Бердичівська, 48
@@ -27,9 +65,28 @@ mixin portfolio()
                 +e.BUTTON.slider-btn.style--btn Хочу такий ремонт
             +e.slider-item.swiper-slide
               +e.slider-show
-                +e.slider-show-wrap
-                  +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
-                  +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slidetabso
+                +e.slider-tabs
+                  +e.slider-tab(data-active-slide='1')
+                    +e.IMG(src="images/port_slide.jpg")
+                  +e.slider-tab(data-active-slide='2')
+                    +e.IMG(src="images/port_slide2.jpg")
+                  +e.slider-tab(data-active-slide='3')
+                    +e.IMG(src="images/port_slide3.jpg")
+
+                +e.slider-show-wrap(data-count="1")
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="2").activeTab
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before2.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide2.jpg").slider-show-img.slider-show-after
+                +e.slider-show-wrap(data-count="3")
+                  +e.slider-slider
+                    +e.IMG(src="images/port_slide-before3.jpg").slider-show-img.slider-show-before
+                    +e.IMG(src="images/port_slide3.jpg").slider-show-img.slider-show-after
+
               +e.slider-info
                 +e.slider-text
                   +e.H5 м. Житомир, вул. Велика Бердичівська, 48

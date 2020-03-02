@@ -865,12 +865,40 @@ a.ui-button:active,
   letter-spacing: 0.42px;
   white-space: nowrap;
   text-align: center;
-  color: #ffc600;
   transition: all .3s;
 }
 
-.header__phone:hover {
+.header__phone-item {
+  display: block;
+  color: #ffc600;
+}
+
+.header__phone-item:hover {
   text-shadow: 0 2px 5px rgba(250, 200, 0, 0.5);
+}
+
+.header__langswitch {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.32px;
+  text-align: center;
+}
+
+.header__langswitch a {
+  color: #161616;
+  transition: all .2s;
+}
+
+.header__langswitch a:hover,
+.header__langswitch a.active {
+  color: #ffc70a;
 }
 
 .header__hamb {
@@ -1776,8 +1804,57 @@ a.ui-button:active,
   box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14);
 }
 
+.portfolio__slider-show {
+  position: relative;
+}
+
+.portfolio__slider-show-wrap {
+  z-index: 1;
+  position: relative;
+  display: none;
+}
+
+.portfolio__slider-show-wrap.activeTab {
+  display: block;
+}
+
 .portfolio__slider-show-wrap img {
   width: 100%;
+}
+
+.portfolio__slider-slidetabso {
+  z-index: 3;
+  position: absolute;
+}
+
+.portfolio__slider-tabs {
+  z-index: 2;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.portfolio__slider-tab {
+  overflow: hidden;
+  width: 86px;
+  height: 86px;
+  margin: 11px 0;
+  border: solid 3px #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolio__slider-tab img {
+  width: 100%;
+  min-height: 100%;
 }
 
 .portfolio__slider-info {
@@ -3747,7 +3824,7 @@ a.ui-button:active,
   }
 
   .header {
-    position: absolute;
+    position: fixed;
     width: calc( 100% / 1 - 36px);
     height: 88px;
     padding: 0 16px;
@@ -4513,10 +4590,6 @@ a.ui-button:active,
     margin-bottom: 240px;
   }
 
-  .reviews__slider-nav {
-    top: 105%;
-  }
-
   .reviews__item-sv {
     margin-top: 20px;
   }
@@ -4740,6 +4813,12 @@ a.ui-button:active,
     padding: 0 10px;
   }
 
+  .slider-nav {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+  }
+
   .inner-container {
     padding: 0 15px;
   }
@@ -4871,6 +4950,11 @@ a.ui-button:active,
   .reviews__wrap:before {
     bottom: -33px;
     left: -32px;
+  }
+
+  .reviews__slider-nav {
+    width: 90%;
+    top: calc(50% + 50px);
   }
 
   .map {
