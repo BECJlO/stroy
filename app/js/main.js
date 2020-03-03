@@ -15,18 +15,18 @@ $(document).ready(function() {
         no_overlay: true,
         before_label: '', // Set a custom before label
         after_label: '',
-        click_to_move :  true,
+        click_to_move: true,
         move_slider_on_hover: false,
-        move_with_handle_only: false 
+        move_with_handle_only: false
     });
     // $('.portfolio__slider-show-wrap').addClass('deactive');
     // $('.twentytwenty-wrapper.twentytwenty-horizontal').addClass('activeTab');
-    $('.portfolio__slider-tab').click(function(){
+    $('.portfolio__slider-tab').click(function() {
         var thisTab = $(this);
         // console.log('[data-count="'+ thisTab.data('active-slide')+'"]');
         thisTab.closest('.portfolio__slider-show').children('.portfolio__slider-show-wrap').removeClass('activeTab');
-        var nextSlide = thisTab.closest('.portfolio__slider-show').children('[data-count="'+ thisTab.data('active-slide')+'"]');
-        
+        var nextSlide = thisTab.closest('.portfolio__slider-show').children('[data-count="' + thisTab.data('active-slide') + '"]');
+
         // thisTab.closest('.portfolio__slider-show').children('.twentytwenty-wrapper.twentytwenty-horizontal').removeClass('activeTab');
         // nextSlide.closest('.twentytwenty-wrapper.twentytwenty-horizontal').addClass('activeTab');
         nextSlide.addClass('activeTab');
@@ -35,9 +35,9 @@ $(document).ready(function() {
             no_overlay: true,
             before_label: '', // Set a custom before label
             after_label: '',
-            click_to_move :  true,
+            click_to_move: true,
             move_slider_on_hover: false,
-            move_with_handle_only: false 
+            move_with_handle_only: false
         });
     });
 
@@ -74,8 +74,8 @@ $(document).ready(function() {
         // $(this).closest(".servise__item").children('.servise__item-content').toggle(selectedEffect, options, 500);
         if ($(this).closest(".servise__item").hasClass("open-block")) {
             // $(this).closest(".servise__item").children('.servise__item-content').slideUp(500)
-            if($(this).closest(".servise__item").hasClass('open-block')){
-                if($(this).closest(".servise__item").hasClass('firstblock')){
+            if ($(this).closest(".servise__item").hasClass('open-block')) {
+                if ($(this).closest(".servise__item").hasClass('firstblock')) {
                     return false
                 }
                 $('.servise__item').first().addClass('open-block');
@@ -120,10 +120,10 @@ $(document).ready(function() {
         },
 
         on: {
-            slideChange: function(){
+            slideChange: function() {
                 $('.first__dots span').removeClass('yellow');
                 var actislide = this.activeIndex;
-                $('[data-as="'+actislide+'"]').addClass('yellow');
+                $('[data-as="' + actislide + '"]').addClass('yellow');
             }
         }
 
@@ -140,8 +140,8 @@ $(document).ready(function() {
 
         breakpoints: {
             1200: {
-              slidesPerView: 2,
-              spaceBetween: 95
+                slidesPerView: 2,
+                spaceBetween: 95
             }
         },
 
@@ -158,7 +158,7 @@ $(document).ready(function() {
         window.onscroll = function() { fixHeader() };
         var header = document.getElementById("header");
         var sticky = header.offsetTop;
-        var firstScr = document.getElementById("first");
+        var firstScr = document.getElementById("topTag");
 
         function fixHeader() {
             if (window.pageYOffset > sticky) {
@@ -205,17 +205,17 @@ $(document).ready(function() {
     //     _renderItem: function( ul, item ) {
     //       var li = $( "<li>" ),
     //         wrapper = $( "<div>", { text: item.label } );
-   
+
     //       if ( item.disabled ) {
     //         li.addClass( "ui-state-disabled" );
     //       }
-   
+
     //       $( "<span>", {
     //         style: item.element.attr( "data-style" ),
     //         "class": "ui-icon " + item.element.attr( "data-class" )
     //       })
     //         .appendTo( wrapper );
-   
+
     //       return li.append( wrapper ).appendTo( ul );
     //     }
     //   });
@@ -224,7 +224,7 @@ $(document).ready(function() {
     //     .iconselectmenu()
     //     .iconselectmenu( "menuWidget")
     //     .addClass( "ui-menu-icons avatar" );
-    
+
     // new WOW().init();
 
 });
