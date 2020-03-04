@@ -12,9 +12,12 @@
     background-attachment: fixed
     padding-top: 130px
     padding-bottom: 60px
+    background-position: 100% 5%
   @media #{$_sm}
     padding-top: 90px
   @media #{$_xs}
+    background-position: 100% 6%
+    background-size: 90%
   &__nav-line
     height: 65px
     background-color: #ffc600
@@ -208,9 +211,9 @@
     // overflow: hidden
     max-width: 744px
     max-height: 683px
-    border-radius: 10px
-    background: white
-    box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
+    // border-radius: 10px
+    // background: white
+    // box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
     @media #{$_xxlg}
     @media #{$_xlg}
     @media #{$_lg}
@@ -225,6 +228,10 @@
       flex-direction: column
       align-items: center
     @media #{$_xs}
+    &-wrap
+      border-radius: 10px
+      // background: white
+      // box-shadow: 0px 16px 21px 0 rgba(0, 1, 2, 0.14)
     &-content
     &:nth-child(1)
       margin-top: -30px
@@ -548,30 +555,70 @@
   &__decelem
     position: absolute
     background: #ffc600
+    @media #{$_xxlg}
+    @media #{$_xlg}
+    @media #{$_lg}
+    @media #{$_md}
+      display: none
+    @media #{$_sm}
+    @media #{$_xs}
     &-e1
       top: 64px
       left: 38%
       width: 181px
       height: 80px
+      @media #{$_xxlg}
+        left: 36%
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     &-e2
       top: 20%
       left: 40%
       width: 401px
       height: 313px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     &-e3
       top: 48%
       width: 212px
       height: 157px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     &-e4
       top: 48%
       left: 48%
       width: 143px
       height: 111px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
     &-e5
       top: 58%
       right: 0
       width: 287px
       height: 391px
+      @media #{$_xxlg}
+      @media #{$_xlg}
+        width: 240px
+        height: 300px
+      @media #{$_lg}
+      @media #{$_md}
+      @media #{$_sm}
+      @media #{$_xs}
       
 .contin
   box-shadow: none
